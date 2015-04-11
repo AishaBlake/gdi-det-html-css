@@ -150,10 +150,11 @@
         </section>
 
         <section>
-          <h3>Overview</h3>
+          <h3>HTML &amp; CSS: Overview</h3>
           <ul>
             <li class="left-align">What is HTML?</li>
             <li class="left-align">Anatomy of a Website</li>
+            <li class="left-align">Get Set Up for Coding!</li>
             <li class="left-align">HTML Elements</li>
             <li class="left-align">What is CSS?</li>
             <li class="left-align">Connecting CSS to HTML</li>
@@ -219,17 +220,17 @@
          <h3>Terms</h3>
          <ul>
            <li>
-            <div class="fragment"><span class = "green">Web design: </span>The process of planning, structuring and creating a website</div>
+            <div class="fragment"><span class = "green">Web design: </span>The process of planning &amp; structuring a website</div>
            </li>
            <li>
-            <div class="fragment"><span class = "green">Web development: </span>The process of programming dynamic web applications</div>
+            <div class="fragment"><span class = "green">Web development: </span>The process of building websites</div>
            </li>
            <br/>
            <li>
             <div class="fragment"><span class = "blue">Front end: </span>The outwardly visible elements of a website or application</div>
            </li>
            <li>
-            <div class="fragment"><span class = "blue">Back end: </span>The inner workings and functionality of a website or application.</div>
+            <div class="fragment"><span class = "blue">Back end: </span>The inner workings and functionality of a website or application</div>
            </li>
          </ul>
         </section>
@@ -332,7 +333,6 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
             <ul>
               <li>Marks the beginning &amp; end of an element</li>
                <li>Opening tag and Closing Tag
-               <li>Tags contain characters that indicate the tag's purpose</li>
              </ul>
 <pre><code class ="html">&lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
 <pre><code class ="html">&lt;p> This is a sample paragraph.&lt;/p></code></pre>
@@ -376,7 +376,8 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
 					<li>Values must be contained inside quotation marks.</li>
 					</ul>
 
-<pre><code class ="html">&lt;div class="copyright">&copy; GDI 2013&lt;/div>
+<pre><code class ="html">&lt;tag attribute="value">....&lt;/tag>
+&lt;div class="copyright">&copy; GDI 2013&lt;/div>
 &lt;img src="my_picture.jpg" /> 
 &lt;a href="http://girldevelopit.com">GDI&lt;/a>
 </code></pre>
@@ -405,7 +406,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         <!-- HTML Page-->
         <section>
         <h3>Doctype</h3>
-        <p>The ﬁrst thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
+        <p>The ﬁrst tag on any HTML page is the <code>doctype</code>, which tells the browser which version of the markup language the page is using.</p>
        <hr>
         <p class="green">In the bad old days, we had to do all this:</p>
         <pre><code class = "html">
@@ -467,7 +468,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         <!-- Develop it -->
         <section>
         	<h3>Let's develop it!</h3>
-        	<p class="blue">Let's get our web page set up with a:</p> 
+        	<p class="blue">Let's get our HTML file set up with a:</p> 
           <ul>
             <li>Doctype</li> 
             <li>HTML tag</li>
@@ -499,7 +500,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         <!-- Nesting-->
         <section>
           <h3>Nesting</h3>
-          <p>All elements "nest" inside one another</p>
+          <p>HTML elements "nest" inside one another</p>
           <p><small>Nesting is what happens when you put containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
           <img src = "images/owls.jpg" width="250px"/>
           
@@ -622,19 +623,19 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
           <div>
           <div class = "left" style = "width:65%">
             <pre>
-              <code>&lt;p>Here's a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.&lt;/p></code>
+              <code>&lt;p>Here's a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Strong&lt;/strong> text.&lt;/p></code>
             </pre>
           </div>
 
           <div class = "left left-align" style = "width:35%; font-size: 70%;">
             <br/><p>
-              Here's a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.
+              Here's a paragraph with <em>Emphasized</em> text and <strong>Strong</strong> text.
             </p>
           </div>
           <div class ="clear"></div>
 
-          <div class="left" style="width: 65%;">
-            <pre><br/>
+          <div class="left" style="width: 65%;"><br/>
+            <pre>
               <code>&lt;p>Emphasized text is &lt;em>particulary&lt;/em> <br/>geared towards screen readers because it <br/>instructs them to read this text with a <br/>different voice inflection.&lt;/p></code>
             </pre>
           </div>
@@ -656,7 +657,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
 			<h3>Let's Develop it!</h3>
 			<p class="left-align">Let's add some content to our site!</p>
 			<ul>
-        <li class="lef-align">Add some short paragraphs to the <span class="blue">&lt;body></span> of your site.
+        <li class="lef-align">Add some short paragraphs to the <code>&lt;body></code> of your site.
           <ul>
           <li>Don't want to write a bunch of paragraphs off the top of your head? Grab some example text from a generator on the web.  Some of our favorites:
             <ul>
@@ -672,9 +673,10 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
       <section>
         <h3>Take it Up a Level!</h3>
         <ul> 
-          <li class="left-align">Add a page title in an H1</li>
-      <li class="left-align">Add one of each other level of heading (H2-H6) in between your paragraphs. </li>
-          <li class="left-align">Italicize and bold some text within a few paragraphs.</li>
+          <li class="left-align">Add a page heading in an <code>&lt;h1></code></li>
+      <li class="left-align">Add one of each other level of heading (<code>&lt;h2></code> - <code>&lt;h6></code>) in between your paragraphs. </li>
+          <li class="left-align">Emphasize and bold some text within a few paragraphs.</li>
+          <li class="left-align">Refresh your page in the browser</li>
 			</ul>
 		</section>
 
@@ -742,23 +744,24 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
 
         <section>
           <h3>Element: <span class="yellow">Link</span></h3>
-          <p class="green">Links have three attributes that go in the opening <strong>a</strong> tag:</p>
+          <p class="green">Links have up to three attributes that go in the opening <strong>a</strong> tag:</p>
           <ul>
-            <li><span class="blue">Href attribute</span>: "http://www.girldevelopit.com"</li>
+            <li><span class="red">Required:</span> <span class="blue">href attribute</span>: "http://www.girldevelopit.com"</li>
             <li><span class="blue">Title attribute</span>: title="Girl Develop It"</li>
-            <li><span class="blue">Target attribute <em>(optional)</em></span>: target="_blank"</li>
+            <li><span class="blue">Target attribute</span>: target="_blank"</li>
           </ul>
 <pre><code>
 &lt;a href ="http://www.girldevelopit.com" title="Girl Develop It" target="_blank">GDI&lt;/a>
 </code></pre>
         <p><a href ="http://www.girldevelopit.com" title="Girl Develop It" target="_blank" style="text-decoration: underline;">GDI</a></p>
-        <p>Surround text or images with the &lt;a&gt; tag to turn them into links</p>
+        <br><br>
+        <p>Surround text or images with the <code>&lt;a&gt;</code> tag to turn them into links</p>
         </section>
         
         <!-- Link Attributes -->
         <section>
         	<h3>Link Attributes</h3>
-        	<p>Links can have attributes that tell the link to do different actions like open in a new tab, or launch your e-mail program.</p>
+        	<p>Links can have attributes that tell the browser to perform different actions like open in a new tab, or launch your e-mail program.</p>
         	<pre><code>
 &lt;a href="home.html" target="_blank">Link Text&lt;/a>
         	</code></pre>
@@ -827,10 +830,10 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         <!-- Images-->
         <section>
           <h3>Element: <span class="yellow">Image</span></h3>
-          <p>Images have four components</p>
+          <!-- <p>Images have four components</p> -->
           <ul>
-            <li><span class="blue">Tag</span>: &lt;img/></li>
-            <li><span class="blue">Src attribute</span>: "http://www.gdidetroit.com/images/gdi-logo.png"</li>
+            <li><span class="blue">Tag</span>: <code>&lt;img/></code></li>
+            <li><span class="red">Required:</span> <span class="blue">src attribute</span>: "http://www.gdidetroit.com/images/gdi-logo.png"</li>
             <li><span class="blue">Alt attribute</span>: "Girl Develop It logo"</li>
             <li><span class="blue">Title attribute</span>: "Girl Develop It"</li>
           </ul>
@@ -1023,7 +1026,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         <!-- example of lists -->
         <section>
         	<h3>Lists: Examples</h3>
-        	<p>Lists can be used to organize any list of items.</p>
+        	<p>Lists can be used to organize all kinds of items.</p>
         	<img src="images/example-lists.png" alt="Examples of lists"/>
         	<p><small>You'd be surprised how often lists are used in web design.</small></p>
         </section>
@@ -1110,7 +1113,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         <!--Comments-->
         <section>
         	<h3>Comments</h3>
-        	<p>You can add comments to your code that will not be seen by the browser, but only visible when viewing the code.</p>
+        	<p>You can add comments to your code that will not be seen in the browser, but are only visible when viewing the code.</p>
         	<pre><code>
 &lt;!-- Comment goes here -->
         	</code></pre>
@@ -1181,7 +1184,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
           <p>There are character codes for many different characters in many different languages</p>
           <div class="left" style="width:70%">
           <ul>
-            <li>Delta: &amp;delta; &delta;</li>
+            <li>Heart: &amp;hearts; &hearts;</li>
             <li>Copyright symbol: &amp;copy; &copy;</li>
             <li>Grave: &amp;grave; &grave;</li>
             <li>An grave a: &amp;agrave; &agrave;</li>
@@ -1228,7 +1231,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
 </code></pre>
         </div>
         <div class="fragment">
-         <br/>
+  
         <p class="green left-align">CORRECT:</p>
         <pre><code>
     &lt;ul>
@@ -1237,7 +1240,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
       &lt;li>Cocoa Puffs&lt;/li>
     &lt;/ul>
 </code></pre>
-<p><small>Every list item gets its own set of open and close li tags, lists are not self-closing tags.</small></p>
+<p><small>Every list item gets its own set of opening and closing li tags, lists are not self-closing tags.</small></p>
         </div>
        </section>
 
@@ -1273,7 +1276,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         <section>
           <h3>Let's develop it</h3>
           <ul>
-            <li>Type this line of code in the head of your HTML file:</li>
+            <li>Type this line of code in the <code>&lt;head></code> of your HTML file:</li>
           <pre><code class="html">
             &lt;link rel="stylesheet" type="text/css" href="styles.css" />
           </code>
@@ -1284,58 +1287,14 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
 
         <section>
   <h3>Check In</h3>
-          <p>Our <span class="blue">index.html</span> file now links to our <span class="blue">styles.css</span> document:</p>
+          <p>Our <span class="blue">index.html</span> file now links to our <span class="blue">styles.css</span> document.</p>
+          <p>The <code>&lt;head></code> section of our HTML looks like this:</p>
       
-        <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
-            &lt;!DOCTYPE html>
-            &lt;html>
-
+        <pre><code class = "html">
                &lt;head>
                   &lt;link rel="stylesheet" type="text/css" href="styles.css" />
                   &lt;title>Title of the page &lt;/title>
                &lt;/head>
-
-               &lt;body>
-                 &lt;h1&gt;Heading 1&lt;/h1&gt;
-                  &lt;p>A paragraph with an image: &lt;img src="images/cat.jpg" />&lt;/p>
-                  &lt;p>Another paragraph, with a &lt;a href="http://google.com">link&lt;/a>!&lt;/p>
-
-                 &lt;h2&gt;Heading 2&lt;/h2&gt; 
-                  &lt;p>Yet another paragraph, with &lt;br/>
-                  a line break.&lt;/p>
-                  &lt;p>I'm a paragraph too, and I have a &lt;a href="http://girldevelopit.com" target="_blank">link that opens in a new tab&lt;/a>!&lt;/p>
-                  &lt;p>Here's an unordered list:&lt;/p>
-                    &lt;ul>
-                      &lt;li>A thing &lt;/li>
-                      &lt;li>Another thing &lt;/li>
-                      &lt;li>A different thing &lt;/li>
-                    &lt;/ul>
-
-                 &lt;h3&gt;Heading 3&lt;/h3&gt; 
-                  &lt;p>I'm a paragraph with some &lt;em>emphasized&lt;/em> text.&lt;/p>
-                  &lt;p>Here's an ordered list:&lt;/p>
-                    &lt;ol> 
-                      &lt;li>Item one &lt;/li>
-                      &lt;li>Item two &lt;/li>
-                      &lt;li>Item three &lt;/li>
-                    &lt;/ol>
-                  &lt;p>I'm a paragraph with &lt;strong>strong&lt;/strong> text and an &lt;a href="mailto:no-reply@gdidetroit.com">email link&lt/a>.&lt;/p>
-
-                 &lt;h4&gt;Heading 4&lt;/h4&gt; 
-                  &lt;p>Another paragraph!&lt;/p>
-                  &lt;p>Maybe your content is more fun?&lt;/p>
-
-                 &lt;h5&gt;Heading 5&lt;/h5&gt; 
-                  &lt;p>Another paragraph!&lt;/p>
-                  &lt;p>Yet another paragraph.&lt;/p>
-
-                 &lt;h6&gt;Heading 6&lt;/h6&gt; 
-                  &lt;p>Almost done!&lt;/p>
-                  &lt;p>Yay! This is a good place for a linked image: &lt;a href="http://girldevelopit.com">&lt;img src="images/logo.jpg"/>&lt;/a>&lt;/p>
-
-               &lt;/body>
-
-            &lt;/html>
           </code></pre>
         </section>
         
@@ -1396,7 +1355,7 @@ img {
         <!-- Color-->
         <section>
           <h3>Property: Color</h3>
-          <p>The color property changes the color of the text.</p>
+          <p>The <code>color</code> property changes the color of the text.</p>
 <pre><code class = "html">
 p {
   color: red;
@@ -1420,13 +1379,13 @@ p {
           <h3>How to find ALL THE COLORS!</h3>
           <ul>
             <li>If you work in Photoshop, you can find your colors there.</li>
-            <li>If you have a Mac, you have a built-in color finder called "Digital ColorMeter," which will give you the RGB value of any color on your screen. (<a href="">More info</a>)</li>
+            <li>You can get an app like <a href="http://theolabrothers.com/" target="_blank">Sip</a> (Mac).</li>
             <li>Lots of websites!
               <ul>
-                <li><a href="https://kuler.adobe.com/create/color-wheel/">Kuler:</a> Adobe's interactive color wheel.</li>
-                <li><a href="http://www.w3schools.com/tags/ref_colorpicker.asp">Color Picker:</a> Simpler color wheel from w3schools.</li>
-                <li><a href="http://www.colourlovers.com/">ColourLovers:</a> Palettes, color trends, &amp; more.</li>
-                <li><a href="http://hexu.al/">Hexu.al:</a> Colorful words!</li>
+                <li><a href="https://color.adobe.com/create/color-wheel/" target="_blank">Color CC:</a> Adobe's interactive color wheel.</li>
+                <li><a href="http://www.w3schools.com/tags/ref_colorpicker.asp" target="_blank">Color Picker:</a> Simpler color wheel from w3schools.</li>
+                <li><a href="http://www.colourlovers.com/" target="_blank">ColourLovers:</a> Palettes, color trends, &amp; more.</li>
+                <li><a href="http://hexu.al/" target="_blank">Hexu.al:</a> Colorful words!</li>
               </ul>
             </li>
 
@@ -1479,9 +1438,11 @@ p {
 }
 </code></pre>
 <p style="text-align:left; margin-top: 20px;">We write our fonts in a <span class="pink">font stack</span>: a hierarchical, comma-separated list:</p>
-          <p>Specific font name</p>
-          <p>More generic fallback font name</p>
-          <p>Generic font style (serif, sans-serif, cursive)</p>
+        <ol>
+          <li>Specific font name</li>
+          <li>More generic fallback font name</li>
+          <li>Generic font style (serif, sans-serif, cursive)</li>
+        </ol>
         </section>
       
       <section>
@@ -1497,8 +1458,8 @@ p {
           </li>
           <li>We use a comma-separated list or <span class="green">font stack</span> for either kind.</li>
           <hr>
-          <li class="fragment">Commonly used font combinations at <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">w3schools</a>.</li>
-          <li class="fragment">Loads of free web fonts at <a href="http://www.google.com/fonts/">Google Fonts</a></li>
+          <li class="fragment">Commonly used font combinations at <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">w3schools</a>.</li>
+          <li class="fragment">Loads of free web fonts at <a href="http://www.google.com/fonts/" target="_blank">Google Fonts</a></li>
           </li>
           </ul>
         
@@ -1655,8 +1616,8 @@ p em {
   &lt;/style>
 &lt;/head>
 </code></pre>
-          <p>Inside &lt;head> element.</p>
-          <p>Uses &lt;style> tag.</p>
+          <p>Inside <code>&lt;head></code> element.</p>
+          <p>Uses <code>&lt;style></code> tag.</p>
           <p>Can only be used in one html file</p>
         </section>
         
@@ -1711,7 +1672,7 @@ p{
             <li>width</li>
             <li>height</li>
           </ul>
-          <p><a href = "http://gdidetroit.com/intro/css-properties-list.pdf">Comprehensive list of all CSS properties</a></p>
+          <p><a href = "http://gdidetroit.com/intro/css-properties-list.pdf" target="_blank">Comprehensive list of all CSS properties</a></p>
         </section>
 
                
@@ -1811,13 +1772,13 @@ p {
           <li>Create a folder for the next class, name it <span class="blue">"html-site2"</span></li>
           <li>Create <span class="blue">"html-site2/images"</span>, and put the following in it: 
           <ul>
-            <li>A profile picture of yourself (jpg file)</li>
+            <li>A profile picture of yourself</li>
             <li>2 to 3 other pictures for your website</li>
             <li><strong>Give these files simple names without spaces or caps!</strong></li>
           </ul>
           <li>Download these icons: <a href="http://gdidetroit.com/intro/icons.zip
  ">http://gdidetroit.com/intro/icons.zip</a>
-          <li><span class="yellow">Bonus</span>: Write a paragraph to introduce yourself</li>
+          <li><strong><span class="yellow">Bonus</span></strong>: Write a paragraph to introduce yourself</li>
           </ul>
         </section>
 

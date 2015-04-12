@@ -104,6 +104,16 @@
           <a href="http://alistapart.com" target="_blank"><img src="images/ala.png" alt="A List Apart homepage" target="_blank" height="350px"/></a>
            <a href="http://tattly.com" target="_blank"><img src="images/tattly.png" alt="Tattly homepage" target="_blank" height="350px"/></a>
         </section>
+
+        <!-- <section>
+       	<h3>Follow-Up On Questions</h3>
+        	<ul>
+        		<li>Here's the correct link for our <a href="http://gdidetroit.com/intro/css-properties-list.pdf" target="_blank">CSS Properties List</a></li>
+        		<li>You can always find it at <a href="http://gdidetroit.com/intro/" target="_blank">gdidetroit.com/intro/</a></li>
+        		<li>An explanation on <a href="http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/" target="_blank">pixels vs. ems vs. percentages</a></li>
+        	</ul>
+        </section> -->
+
         <section>
         	<h3>What we'll be making today</h3>
         		<p>Today we will be making a site from scratch using HTML5 elements to create a header, footer, sidebar and a content area.</p>
@@ -144,7 +154,7 @@
        	<section>
           <h3>Let's Develop It: Setting up our <span class="green">index</span> file for today</h3>
          <p class="align-left">Open your new <span class="green">index.html</span> file<br/>
-          Remember to start with doctype &amp; html tags.<br>
+          Remember to start with <code>doctype</code> &amp; <code>html</code> tags.<br>
           Add the code to link to <span class="green">styles.css</span>!</p>
   
                 <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
@@ -216,6 +226,9 @@
 
        &lt;ul>
           &lt;li>Your menu&lt;/li>
+          &lt;li>Items&lt;/li>
+          &lt;li>Go Here&lt;/li>
+          &lt;li>:)&lt;/li>
        &lt;/ul>
    
    &lt;/nav>
@@ -276,11 +289,11 @@
             	 <br/>
 <pre>
 <code class="html">
-&lt;p>My family and I visited The Epcot center this summer.&lt;/p>
+&lt;p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.&lt;/p>
 
 &lt;aside>
-  &lt;h4>Epcot Center&lt;/h4>
-  &lt;p>The Epcot Center is a theme park in Disney World, Florida.&lt;/p>
+  &lt;h4>Fun Fact:&lt;/h4>
+  &lt;p>The first web browser was called WorldWideWeb.&lt;/p>
 &lt;/aside>
 </code>
 </pre>
@@ -294,7 +307,7 @@
               <li>Contains information about its containing element</li>
               <li>E.g. who wrote it, copyright, links to related content, etc.</li>
               <li>Document can have multiple footer elements</li>
-              <li>E.g. One for the page, one for each section</li>
+              <li>E.g. One for the page, one for each blog post or section</li>
             </ul>
             <pre>
 <code class="html">
@@ -306,15 +319,32 @@
             </pre>
           </section>
          
-         <!-- <section>
-            <h3>HTML5 Element:  <span class="yellow">&lt;nav&gt;</span></h3>
+<section>
+            <h3>HTML5 Element:  <code>&lt;nav&gt;</code></h3>
             <ul>
               <li>Contains major navigational information</li>
               <li>Usually a list of links</li>
               <li>Often lives in the header</li>
               <li>E.g. site navigation</li>
             </ul>
-          </section>-->
+
+             <pre>
+            	<code class="html">
+&lt;header>
+   &lt;nav>
+       &lt;ul>
+          &lt;li>Your menu&lt;/li>
+          &lt;li>Items&lt;/li>
+          &lt;li>Go Here&lt;/li>
+          &lt;li>:)&lt;/li>
+       &lt;/ul>
+   &lt;/nav>
+&lt;/header>
+            	</code>
+
+            </pre>
+          
+          </section>
           
           <!--<section>
             <h3>HTML5 Element: <span class="yellow">&lt;article&gt;</span></h3>
@@ -333,16 +363,18 @@
           Inside the <code>body</code>, give your page the following structure:</p> 
          <br/>
          <ul>
-         <li>A header</li>
-         <li>A main content area</li>
-         <li>Sidebar (aside)</li>  
-         <li>A footer</li>       
+         <li>A <code>header</code> with a <code>nav</code></li>
+         <li>A <code>main</code> content area</li>
+         <li>Sidebar (<code>aside</code>)</li>  
+         <li>A <code>footer</code></li>       
      </ul>  
 
          <pre><code class = "html" style="min-height: 250px; max-height: 250px;"> 
                &lt;body>
 
                    &lt;header>
+                   		&lt;nav>
+                   		&lt;/nav>
                    &lt;/header>
 
                    &lt;main>
@@ -358,7 +390,7 @@
           </code></pre>
       </section>
 
-        <section>
+      <!--  <section>
           <h3>Check-in</h3>
           <p>Now your <span class="blue">index.html</span> file should have the following structure:</p>
           <pre><code class="html">
@@ -371,6 +403,8 @@
               &lt;body>
 
                   &lt;header>
+                  	&lt;nav>
+                  	&lt;/nav>
                   &lt;/header>
 
                   &lt;main>
@@ -385,23 +419,24 @@
               &lt;/body>
               &lt;/html>
             </code></pre>
-        </section>
+        </section>-->
         
       <!-- Adding Content -->
         <section>
           <h3>Begin filling in content</h3>
           <ul>
-          <li>Inside <code>&lt;header&gt;</code>, add your page's <code>&lt;title&gt;</code></li>
+          <li>Inside <code>&lt;head&gt;</code>, add your site's <code>&lt;title&gt;</code></li>
+          <li>In the <code>&lt;header&gt;</code>, give your page a title in a <code>heading</code></li>
           <li>Add a few paragraphs &amp; headings (<code>h1</code>, <code>h2</code>, etc) to <code>&lt;main&gt;</code></li>
           <li>Add a profile image to <code>&lt;aside&gt;</code></li>
-          <li>Add a sentence to <code>&lt;footer&gt;</code></li>
+          <li>Add a paragraph to <code>&lt;footer&gt;</code></li>
         </ul>
 	<pre><code class="html">
      &lt;img src="images/profile.jpg" alt="my profile pic" width="200"/>
             </code></pre>
         </section>
 
-        <section>
+       <!-- <section>
           <h3>Add a list and links</h3>
           <ul>
           <li>Add a list to the sidebar</li>
@@ -417,6 +452,23 @@
        &lt;li>&lt;a href="http://girldevelopit.com" target="_blank"/>My Link&lt;/a>&lt;/li>    
        &lt;li>Another List Item&lt;/li>
     &lt;/ul>
+                    </code></pre>
+                </section>-->
+
+         <section>
+          <h3>Add a navigation list</h3>
+          <ul>
+          <li>Add a list of navigational links to <code>nav</code></li>
+        </ul>
+        	<pre><code class="html">
+  &lt;nav>
+    &lt;ul>
+       &lt;li>&lt;a href="about.html">About Me</a>&lt;/li>
+       &lt;li>&lt;a href="portfolio.html">My Work&lt;/li>
+       &lt;li>&lt;a href="contact.html">Contact&lt;/li>
+       &lt;li>&lt;a href="http://girldevelopit.com" target="_blank"/>Girl Develop It&lt;/a>&lt;/li>    
+    &lt;/ul>
+  &lt;/nav>
                     </code></pre>
                 </section>
 
@@ -443,6 +495,17 @@
           <div class="right fragment">
             <img src="images/example-blockinline.png" alt="example of inline and block elements" />
           </div>
+        </section>
+
+        <section>
+        	<h3>Inline vs. Block</h3>
+        	<p>We can tell an element to display inline or block with CSS:</p>
+
+        		<pre><code class ="css">
+              nav ul li {
+              display: inline;
+          	}
+              </code></pre>
         </section>
       
   <!-- Box model-->
@@ -646,6 +709,7 @@
               margin-right: 5px;
               width: 300px;
             </code></pre>
+            <small>Sometimes centering is tricky! Here's a <a href="http://css-tricks.com/centering-css-complete-guide/">complete guide to centering in CSS</a>.</small>
         </section>
 
 		<!-- Exercise -->
@@ -693,9 +757,9 @@
 			<h3>Let's develop it!</h3>
 			<div class="left-align">
 				<p style="text-decoration:underline;">Target each element with CSS:</p>
-				<p>Make the <code>body</code> 900px wide.</p>
-				<p>Make the sidebar (<code>&lt;aside&gt;</code>) 300px wide.</p>
-				<p>Make the content area (<code>&lt;main&gt;</code>) 550px wide.</p>
+				<p>Make the <code>body</code> 80% wide.</p>
+				<p>Make the sidebar (<code>&lt;aside&gt;</code>) 30% wide.</p>
+				<p>Make the content area (<code>&lt;main&gt;</code>) 60% wide.</p>
 				<p>Make the <code>header</code> 150px tall</p>
 			</div>
 		</section>
@@ -705,15 +769,15 @@
       <pre>
         <code class="css">
           body {
-          width: 900px;
+          width: 80%;
           }
 
           aside {
-          width: 300px;
+          width: 30%;
           }
 
           main {
-          width: 550px;
+          width: 60%;
           }
 
           header {
@@ -748,6 +812,18 @@
     <small class="fragment">The paragraph text will be <span class="blue">blue</span>, because bottom rules override earlier rules.</small>
        </section>
 
+
+        <section>
+        	<h3>Let's Develop It: Style Your Page</h3>
+        	<p>Now that we've got some structure and content, let's take some time to add colors and fonts with CSS.</p>
+		<br><br>
+        	<ul>
+        		<li><a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Common Font Stacks</a></li>
+        		<li>Find color codes at <a href="http://www.w3schools.com/html/html_colornames.asp" target="_blank">W3Schools</a>, <a href="http://www.colourlovers.com/colors" target="_blank">ColourLovers</a>, or <a href="http://hexu.al/" target="_blank">hexu.al</a></li>
+        	</ul>
+        	
+        </section>
+
      <section>
       <h3>Which element should I use?</h3>
              <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf" target="_blank"><img src="images/h5d-sectioning-flowchart.png" alt="HTML5 Doctor chart" width="800"/></a>
@@ -755,8 +831,8 @@
 
   <!-- Divs -->
       <section> 
-          <h3>Element: Div</h3>
-          <p>If no specific HTML5 structural element applies, then use a <code>&lt;div&gt;</code></p>
+          <h3>Element: <code>div</code></h3>
+          <p style="font-size:85%;">If no specific HTML5 structural element applies, then use a <code>&lt;div&gt;</code></p>
             <ul style="font-size: 75%;">
               <li>A division, or section of content within an HTML page.</li>
               <li>Used to group elements to format them with CSS.</li>
@@ -874,6 +950,7 @@
 
             <pre><code class = "html">
             &lt;p class="warning">Run away!&lt;/p>
+            &lt;h2 class="warning">Yikes!&lt;/h2>
             </code></pre>
                      <p>The associated HTML.</p>
                     </section>
@@ -895,7 +972,8 @@
       </div>
        <div>
             <pre style="width: 42%; float: left;"><code class = "html">
-    &lt;p class = "this_class">
+    &lt;p class="this_class">
+    &lt;a class="this_class">
           </code></pre>
           <pre style="width: 42%; float: right;"><code class = "css">
     .this_class { color:#333; }
@@ -1115,8 +1193,8 @@
         <div class="right" style="width: 45%;">
         <img src="images/absolute_buttons.png" alt="example float" width="85%"/>
           <pre><code class ="css">
-              position: absolute;
-              top: 40px;
+          position: absolute;
+          top: 40px;
           </code></pre>
         </div>
        </section>
@@ -1307,8 +1385,8 @@
 <!-- Z-index -->
        <section>
        <h3>Z-index</h3>
-         <p class="left-align">When you use positioning to move elements out of the normal flow of content, elements can overlap. You can change the order of overlapping with z-index.</p>
-         <p class="left-align">The element with highest z-index goes on top.</p>
+         <p class="left-align" style="font-size: 75%;">When you use positioning to move elements out of the normal flow of content, elements can overlap. You can change the order of overlapping with z-index.</p>
+         <p class="left-align" style="font-size: 75%;">The element with highest z-index goes on top.</p>
         <pre><code class ="html">
           .bottom{
             position: absolute; 
@@ -1392,7 +1470,7 @@
 
 <!-- What's wrong with my code-->
        <section>
-        <h3>What's wrong with my code</h3>
+        <h3>What's wrong with my code?</h3>
         <p>Why do you think this code isn't working?</p>
         <div class="fragment">
         <p class="red left-align">WRONG:</p>
@@ -1464,7 +1542,7 @@
         <li>HTML5 + CSS3</li>
         <li>JavaScript</li>
         <li>Sass</li>
-        <li>Content management systems</li>
+        <li>Content management systems like WordPress</li>
         <li>PHP/MySQL</li>
         </ul>
     </ul>

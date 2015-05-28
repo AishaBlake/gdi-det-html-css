@@ -316,6 +316,39 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
           <h4>After typing this, save and close the tab. You're ready to use Sublime!</h4>
           <img src="images/hooraycat.jpg" width="300">
         </section>
+
+        <section>
+          <h3>Make Your HTML File</h3>
+          <ul>
+            <li>In Sublime, create a new file.</li>
+            <li>Save that file as <code>index.html</code>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Make Your HTML File</h3>
+          <ul>
+            <li>Let's add our required HTML tags to <code>index.html</code></li>
+            <li>Type the following:</li>
+            <pre>
+              <code class="html">
+                &lt;!doctype html>
+                &lt;html>
+                  &lt;head>
+                  &lt;/head>
+
+                  &lt;body>
+                  &lt;/body>
+                &lt;/html>
+              </code>
+            </pre>
+          </ul>
+        </section>
+
+        <section>
+          <h3>So...what did we just do?</h3>
+          <p>We added the first HTML elements to the file that will become our website.</p>
+        </section>
                 
         <!-- HTML element-->
         <section>
@@ -468,15 +501,32 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         <!-- Develop it -->
         <section>
         	<h3>Let's develop it!</h3>
-        	<p class="blue">Let's get our HTML file set up with a:</p> 
+        	<p class="left-align">Your <code>index.html</code> file already contains the <code>doctype</code> tag and <code>html</code>, <code>head</code>, and <code>body</code> tags, so we are ready to start adding content!</p> 
+          <br><br>
           <ul>
-            <li>Doctype</li> 
-            <li>HTML tag</li>
-            <li>Head</li>
-            <li>Title</li>
-            <li>Body</li>
+            <li>Let's add a <code>&lt;title></code> tag <span class="fragment">...in between the <code>head</code> tags!</span></li>
           </ul>
-        	<p>Later we'll add some content to the body!</p>
+            <pre class="fragment"><code class="html">
+              &lt;head>
+                &lt;title>All About Cats!&lt;/title>
+              &lt;/head>
+            </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Let's develop it!</h3>
+            <p class="left-align">And here's some dummy text from <a href="http://kittyipsum.com/" target="_blank">Kitty Ipsum</a> for the <code>body</code>. Paste it in after <code>&lt;body></code> and before <code>&lt;/body></code></p>
+            <pre>
+              <code>
+Kitty ipsum dolor sit amet, amet iaculis dolor chuf catnip, purr sleep on your keyboard shed everywhere lay down in your way feed me. Ac stretching elit purr, give me fish scratched meow vel attack your ankles sunbathe toss the mousie amet. Orci turpis rhoncus justo vestibulum, lick enim libero amet sunbathe chuf climb the curtains. Aliquam feed me eat sollicitudin egestas bat, hairball fluffy fur dolor iaculis sleep on your keyboard tristique. Chase the red dot vel run tortor, give me fish attack nam I don't like that food sagittis elit stretching suspendisse. Quis in viverra bat judging you catnip attack your ankles, feed me puking vehicula mauris a bibendum tortor. Sollicitudin bibendum nam eat the grass, feed me vehicula knock over the lamp nam lay down in your way fluffy fur libero pharetra. Enim ut faucibus faucibus nam stretching lay down in your way, rhoncus climb the curtains jump lay down in your way attack.
+
+Lick judging you toss the mousie suspendisse faucibus, rutrum attack mauris a ac claw nibh. Sagittis claw give me fish non amet, rhoncus toss the mousie litter box nibh stretching. Non sleep in the sink faucibus tristique, give me fish faucibus vehicula neque chuf chase the red dot vel. Enim tristique iaculis vulputate vehicula, et attack biting jump pellentesque. Toss the mousie dolor biting sleep on your keyboard sollicitudin, sleep in the sink etiam suscipit enim eat the grass. Sleep in the sink jump on the table give me fish rip the couch, stretching orci turpis quis tortor hairball pellentesque stuck in a tree. Rhoncus vehicula justo quis feed me tristique, hiss litter box et run egestas nullam.
+
+Suspendisse stretching hairball nam dolor adipiscing, quis neque judging you run suscipit chuf. Toss the mousie sniff vehicula puking bat iaculis, lay down in your way sleep on your keyboard faucibus ac. Nam quis fluffy fur sleep on your face pharetra jump, non kittens sunbathe chase the red dot et. Faucibus justo sleep on your keyboard kittens, litter box dolor jump pellentesque jump on the table sagittis vulputate tristique. Nam sleep in the sink enim libero, nam dolor justo kittens lick vulputate consectetur jump. Jump scratched libero sleep on your keyboard chase the red dot, knock over the lamp nunc vel enim nam pharetra. Climb the curtains in viverra sleep on your keyboard sleep in the sink, claw quis biting etiam pellentesque toss the mousie hairball.
+
+Vulputate amet enim ut judging you climb the curtains rutrum, give me fish shed everywhere neque lick hairball. Claw eat the grass cras nec claw, suscipit bibendum accumsan hairball tempus jump on the table lay down in your way sleep on your face. Suspendisse suscipit leap sunbathe neque hairball, pellentesque shed everywhere climb the curtains knock over the lamp climb the curtains vulputate. Iaculis zzz dolor enim ut et, vulputate stretching faucibus enim mauris a shed everywhere run. Suspendisse tristique nam vel meow, iaculis fluffy fur purr quis quis nunc. Zzz jump on the table sollicitudin puking, shed everywhere attack meow tristique bibendum jump on the table meow.
+          </code>
+            </pre>
         </section>
         <section>
           <h3>Check In</h3>
@@ -486,66 +536,47 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
             &lt;html>
 
                &lt;head>
-                &lt;title>Title of the page &lt;/title>
+                &lt;title>Super cool website &lt;/title>
                &lt;/head>
 
                &lt;body>
-                The page content here.
+                [Kitty Ipsum dummy text here]
                &lt;/body>
 
             &lt;/html>
           </code></pre>
         </section>
-        
-        <!-- Nesting-->
-        <section>
-          <h3>Nesting</h3>
-          <p>HTML elements "nest" inside one another</p>
-          <p><small>Nesting is what happens when you put containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
-          <img src = "images/owls.jpg" width="250px"/>
-          
-          <p>Whichever element OPENS first CLOSES last</p>
-        </section>
-        
-        <!--example of nesting -->
-        <section>
-        	<h3>Nesting: Example</h3>
-        	<p>Elements are 'nested' inside the &lt;body&gt; tag.</p>
-        	<pre><code>
-        	&lt;body&gt;
-        	   &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
-        	&lt;/body&gt;
-        	</code></pre>
-        	<p>Paragraphs 'nested' inside list items.</p>
-        	<pre><code>
-        	&lt;ul&gt;
-        	   &lt;li&gt;
-        	      &lt;p&gt;A paragraph inside a list item&lt;/p&gt;
-        	   &lt;/li&gt;
-        	&lt;/ul&gt;
-        	</code></pre>
-        </section>
-
-        <!--<section>
-          <h3>Nesting</h3>
-          <p>All elements "nest" inside one another</p>
-          <img src = "images/nesting_simple1.png" style="border: none; box-shadow: none;" />
-          <p>Whichever element OPENS first CLOSES last</p>
-        </section>-->
 
         <section>
-          <h3>Nesting</h3>
-          <p>All elements "nest" inside one another</p>
-          <img src = "images/nesting_simple2.png" style="border: none; box-shadow: none; width: 560px;" />
-          <p>Whichever element OPENS first CLOSES last</p>
+          <h3>You've just created a web page!</h3>
+          <p>It's very basic, but we can view it in the browser! Let's take a look.</p>
+          <ul>
+            <li>In Sublime, right-click and select "Open in Browser"</li>
+            <li>Or find the <code>index.html</code> file on your computer (in Finder on Mac or Explorer on Windows) and open it.</li>
+          </ul>
         </section>
 
+        <section>
+          <h3>What happened?</h3>
+          <ul>
+            <li class="fragment">We see our title in the tab!</li>
+            <li class="fragment">We see our content in the browser! But...</li>
+            <li class="fragment">Our line breaks disappeared.</li>
+            <li class="fragment">All our text is black, 16pt, Times New Roman.</li>
+          </ul>
+          <br><br>
+          <p class="fragment left-align">To fix these issues, we'll:</p>
+          <ol class="fragment">
+            <li>Organize our content using HTML elements</li>
+            <li>Style that content with CSS</li>
+          </ol>
+        </section>
 
         <!-- Elements -->
 
         <!-- Paragraphs-->
         <section>
-          <h3>Element: <span class="yellow">Paragraph</span></h3>
+          <h3>Element: Paragraph: <code>&lt;p></code></h3>
           <div>
           <div class = "left" style = "width:50%">
 <pre><code>
@@ -572,16 +603,25 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
           </div>
           <div class ="clear"></div>
           <br/>
-          <p><small>* White space in HTML is only for humans and their sanity!</small></p>
+          <p><small>* White space in HTML is only for humans and our sanity!</small></p>
           </div>
         </section>
         
         <section>
-        	<h3>Example: Paragraphs</h3>
-        	<p>Paragraphs allow you to format your content in a readable fashion.</p>
-        	<img src="images/example-paragraphs.png" alt="Example of Paragraphs in the wild" />
-        	<p><small>* You can edit how paragraphs are displayed with CSS</small></p>
+          <h3>Example: Paragraphs</h3>
+          <p>Paragraphs allow you to format your content in a readable fashion.</p>
+          <img src="images/example-paragraphs.png" alt="Example of Paragraphs in the wild" />
+          <p><small>* You can edit how paragraphs are displayed with CSS</small></p>
         </section>
+
+        <section>
+          <h3>Let's Develop It: Paragraphs</h3>
+          <ul>
+            <li>Make each paragraph of your text an HTML paragraph</li>
+            <li>Refresh your page in the browser to see how it changes</li>
+          </ul>
+        </section>
+        
         
         <!-- Headings-->
         <section>
@@ -655,23 +695,6 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
 <!--develop it!-->
 		<section >
 			<h3>Let's Develop it!</h3>
-			<p class="left-align">Let's add some content to our site!</p>
-			<ul>
-        <li class="lef-align">Add some short paragraphs to the <code>&lt;body></code> of your site.
-          <ul>
-          <li>Don't want to write a bunch of paragraphs off the top of your head? Grab some example text from a generator on the web.  Some of our favorites:
-            <ul>
-              <li><a href="http://www.lipsum.com/" target="_blank">Lorem Ipsum</a></li>
-              <li><a href="http://www.cupcakeipsum.com/" target="_blank">Cupcake Ipsum</a></li>
-              <li><a href="http://www.catipsum.com/" target="_blank">Cat Ipsum</a></li>
-            </ul>
-        </ul></li>
-        <li class="fragment">View in browser!</li>
-      </ul>
-      </section>
-
-      <section>
-        <h3>Take it Up a Level!</h3>
         <ul> 
           <li class="left-align">Add a page heading in an <code>&lt;h1></code></li>
       <li class="left-align">Add one of each other level of heading (<code>&lt;h2></code> - <code>&lt;h6></code>) in between your paragraphs. </li>
@@ -680,7 +703,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
 			</ul>
 		</section>
 
-    <section>
+    <!-- <section>
       <h3>Check In</h3>
       <p>Now your <span class="blue">index.html</span> file should be looking something like this:</p>
       <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
@@ -721,7 +744,50 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
 
             &lt;/html>
           </code></pre>
-    </section>
+    </section> -->
+
+    <!-- Nesting-->
+        <section>
+          <h3>Nesting</h3>
+          <p>HTML elements "nest" inside one another</p>
+          <p><small>Nesting is what happens when you put containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
+          <img src = "images/owls.jpg" width="250px"/>
+          
+          <p>Whichever element OPENS first CLOSES last</p>
+        </section>
+        
+        <!--example of nesting -->
+        <section>
+          <h3>Nesting: Example</h3>
+          <p>Elements are 'nested' inside the &lt;body&gt; tag.</p>
+          <pre><code>
+          &lt;body&gt;
+             &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
+          &lt;/body&gt;
+          </code></pre>
+          <p>Paragraphs 'nested' inside list items.</p>
+          <pre><code>
+          &lt;ul&gt;
+             &lt;li&gt;
+                &lt;p&gt;A paragraph inside a list item&lt;/p&gt;
+             &lt;/li&gt;
+          &lt;/ul&gt;
+          </code></pre>
+        </section>
+
+        <!--<section>
+          <h3>Nesting</h3>
+          <p>All elements "nest" inside one another</p>
+          <img src = "images/nesting_simple1.png" style="border: none; box-shadow: none;" />
+          <p>Whichever element OPENS first CLOSES last</p>
+        </section>-->
+
+        <section>
+          <h3>Nesting</h3>
+          <p>All elements "nest" inside one another</p>
+          <img src = "images/nesting_simple2.png" style="border: none; box-shadow: none; width: 560px;" />
+          <p>Whichever element OPENS first CLOSES last</p>
+        </section>
 		
 		<!-- Links-->
       <section>
@@ -761,7 +827,8 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         <!-- Link Attributes -->
         <section>
         	<h3>Link Attributes</h3>
-        	<p>Links can have attributes that tell the browser to perform different actions like open in a new tab, or launch your e-mail program.</p>
+        	<p style="font-size:85%;" class="left-align">Links can have attributes that tell the browser to perform different actions like open in a new tab, or launch your e-mail program.</p>
+          <p style="font-size:85%;" class="left-align">Use these sparingly – they're not always what your user is expecting!</p>
         	<pre><code>
 &lt;a href="home.html" target="_blank">Link Text&lt;/a>
         	</code></pre>
@@ -786,7 +853,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
           </ul>
         </section>
 
-        <section>
+       <!--  <section>
           <h3>Check In</h3>
           <p>Our friendly <span class="blue">index.html</span> file is starting to look a bit like so:</p>
         <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
@@ -825,7 +892,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
             
             &lt;/html>
           </code></pre>
-        </section>
+        </section> -->
         
         <!-- Images-->
         <section>
@@ -909,7 +976,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
           </ul>
         </section>
 
-<section>
+<!-- <section>
   <h3>Check In</h3>
           <p>Our <span class="blue">index.html</span> file now looks something like:</p>
         <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
@@ -950,7 +1017,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
 
             &lt;/html>
           </code></pre>
-        </section>
+        </section> -->
 
 <!-- What's wrong with my code?  -->
  <section>
@@ -976,11 +1043,11 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
        <p>Which link will open in a new window or tab?</p>
         <div style="width:100%;">
         <pre><code class="html">
-&lt;a href="http://www.google.com"> Search &lt;/a></code></pre>
+&lt;a href="http://www.google.com">Search&lt;/a></code></pre>
         </div>
         <div style="width:100%;">
         <pre><code class="html">
-&lt;a href="http://www.google.com" target="_blank"> Search &lt;/a>
+&lt;a href="http://www.google.com" target="_blank">Search&lt;/a>
 </code></pre>
         </div>
 <p class="fragment"><small>The <span class="green">target="_blank"</span> tells the browser to open the link in a new window or tab.</small></p>
@@ -1054,7 +1121,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
           <li>A list of images!</li>
         </section>
 
-<section>
+<!-- <section>
   <h3>Check In</h3>
           <p>Our <span class="blue">index.html</span> now has headings paragraphs, links, images, and lists -- whew!:</p>
       
@@ -1108,7 +1175,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
 
             &lt;/html>
           </code></pre>
-        </section>
+        </section> -->
 
         <!--Comments-->
         <section>
@@ -1132,7 +1199,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         	</code></pre>
         </section>        
         
-        <section>
+ <!--        <section>
           <h3>Tables</h3>
           <p>Tables are a way to represent complex information <br/>in a grid format.</p>
           <p>Tables are made up of rows and columns.</p>
@@ -1168,15 +1235,14 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
           </div>
           <div class ="clear"></div>
           </div>
-        </section>
+        </section> -->
         
         <!-- Table Examples -->
-        <section>
+        <!-- <section>
         	<h3>Tables: Examples</h3>
         	<p>Tables can be styled with CSS to add zebra striping or to highlight important rows/columns.</p>
         	<img src="images/example-tables.png" alt="Example of tables" height="500"/>
-        </section>
-
+        </section> --> 
         
         <!-- Character codes-->
         <section>

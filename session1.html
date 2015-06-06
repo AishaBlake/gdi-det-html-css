@@ -1,153 +1,101 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
+	<title>Class 1 &mdash; HTML/CSS &mdash; Girl Develop IT</title>
+	<meta name="description" content="This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, Jen Myers, Cara Jo Miller, Laura Eagin, Nicole Rodriguez, and Leeann Drees.
+  
+  The course is meant to be taught in 2 four-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+	<meta name="author" content="Girl Develop It">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="stylesheet" href="reveal/css/reveal.css">
+	<link rel="stylesheet" href="reveal/css/theme/gdilight.css">
+	<link rel="stylesheet" href="css/theme/gdi-sass.css" id="theme">
+	<!-- For syntax highlighting -->
+	<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+	<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
+	<!-- If use the PDF print sheet so students can print slides-->	
+	<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+	<!--[if lt IE 9]>
+	 <script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
 
-		<title>Class 1 &mdash; HTML/CSS &mdash; Girl Develop IT</title>
+<body>
+<div class="reveal">
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+	<!-- Opening slide -->
+  <section>
+    <h3>Set Up Your Computer for Today</h3>
+    <p><strong>Wifi Network:</strong> atomic-detroit-public</p>
+    <p><strong>Password:</strong> atomicpublic</p>
+    <br/>
+      <p><img src="images/chrome_logo.jpg" style="border:none; box-shadow: none; margin: 0 10px;"/><br/>Install <strong>Google Chrome</strong>, if you don't have it already. <span class="blue">google.com/chrome</span></p>
+      <p><img src="images/sublimetext_logo.jpg" style="border:none; box-shadow: none; margin: 0 10px;"/><br/>Download and install <strong>SublimeText2.</strong> <span class="blue">sublimetext.com/2</span>
+        <br><br>
+      <p>Navigate to <span class="blue">gdidetroit.com/intro/</span> and download the <strong>project files</strong></p>
+    <br/><br/>
+  </section>
+  
+  <!--<section>
+    <h3>Optional: Select new color scheme</h3>
+    <img src = "images/sublime-change-color-scheme.png" style="border: none; box-shadow: none;">
+  </section>-->
 
-		<meta name="description" content="This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, Jen Myers, Cara Jo Miller, Laura Eagin, Nicole Rodriguez, and Leeann Drees.
+  <section>
+    <img src = "images/gdi_logo_badge.png" style="border: none; box-shadow: none;">
+    <h3>Beginning HTML and CSS</h3>
+    <h4>Session 1</h4>
+  </section>
 
-    The course is meant to be taught in 2 four-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
-		<meta name="author" content="Girl Develop It">
+  <section>
+    <h3>Welcome!</h3>
+    <div class = "left-align">
+    <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+    <p class ="green">Some "rules"</p>
+    <ul>
+      <li>We are here for you!</li>
+      <li>Every question is important</li>
+      <li>Help each other</li>
+      <li>Have fun</li>
+    </ul>
+    </div>
+  </section>
+      
+  <section>
+  <h3>Meet Your Instructor</h3>
+  <h4>Leeann Drees</h4>
+  <div class="left" style="width: 75%; line-height: 1.2em;">
+    <ul>
+      <li class="fragment" style="margin-bottom: 10px;">I make websites for a living!</li>
+      <li class="fragment" style="margin-bottom: 10px;">I'm mostly self-taught in HTML &amp; CSS</li> 
+      <li class="fragment" style="margin-bottom: 10px;">I work with Laura Eagin as <a href="http://ellell.co">ellell &amp; co</a></li>
+      <li class="fragment" style="margin-bottom: 10px;">I'm on the leadership team with Girl Develop It Detroit</li>             
+      <li class="fragment" style="margin-bottom: 10px;">Twitter: <a href="http://www.twitter.com/leeanndrees">@leeanndrees</a></li>
+      <li class="fragment" style="margin-bottom: 10px;">E-mail: <a href="mailto:leeann@girldevelopit.com">leeann@girldevelopit.com</a></li>
+    </ul>
+  </div>
+  <div class="right" style="width:25%">
+	 <img src="images/all3cats.jpg"/>
+  </div>
+  </section>
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/gdilight.css">
-		<link rel="stylesheet" href="css/theme/gdi-sass.css" id="theme">
-
-		<!-- For syntax highlighting -->
-		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/light.css">
-
-		<!-- If use the PDF print sheet so students can print slides-->
-		
-		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-			  <!-- Opening slide -->
-			  <!-- WiFi Info -->
-        <section>
-          <h3>Set up your computer for today</h3>
-          <p><strong>Wifi Network:</strong> atomic-detroit-public</p>
-          <p><strong>Password:</strong> atomicpublic</p>
-          <br/>
-            <p><img src="images/chrome_logo.jpg" style="border:none; box-shadow: none; margin: 0 10px;"/><br/>Install <strong>Google Chrome</strong>, if you don't have it already. <span class="blue">www.google.com/chrome</span></p>
-            <p><img src="images/sublimetext_logo.jpg" style="border:none; box-shadow: none; margin: 0 10px;"/><br/>Download and install <strong>SublimeText2.</strong> <span class="blue">www.sublimetext.com/2</span>
-          <br/><br/><small><span style="yellow">Bonus:</span> Find a few images/photos to use later when we start coding.</small>   
-        </section>
-       
-        
-
-        <!--<section>
-          <h3>Optional: Select new color scheme</h3>
-          <img src = "images/sublime-change-color-scheme.png" style="border: none; box-shadow: none;">
-        </section>-->
-
-        <section>
-          <img src = "images/gdi_logo_badge.png" style="border: none; box-shadow: none;">
-          <h3>Beginning HTML and CSS</h3>
-          <h4>Session 1</h4>
-        </section>
-        <!-- Welcome-->
-        <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
-          </div>
-        </section>
-        
-        <!--<section>
-          <h3>Meet Your Instructors</h3>
-            <h4>Laura Eagin</h4>
-          <div class="left" style="width: 75%; font-size: 70%; line-height: 1.2em;">
-                      <ul>
-              <li class="fragment" style="margin-bottom: 10px;"><span class="green">2002: </span>Started working as a graphic designer. Print only, please and thank you.</li>
-              <li class="fragment" style="margin-bottom: 10px;"><span class="green">2005: </span>Customized my snazzy MySpace profile</li>
-              <li class="fragment" style="margin-bottom: 10px;"><span class="green">2008: </span>Was paid to update client websites. <br />They had no idea I didn't know what I was doing.</li>
-              <li class="fragment" style="margin-bottom: 10px;"><span class="green">2010: </span>Went solo. Launched my 40th custom WordPress website. Felt like a surgeon.</li>
-              <li class="fragment" style="margin-bottom: 10px;">Twitter: <a href="http://www.twitter.com/choolaura">@chooLaura</a></li>
-              <li class="fragment" style="margin-bottom: 10px;">E-mail: <a href="mailto:lauraeagin@gmail.com">LauraEagin@gmail.com</a></li>
-            </ul>
-          </div>
-          <div class="right" style="width:25%">
-          	<img src="images/lauras_cats.jpg"/>
-          </div>
-        </section>-->
-
-
-         <section>
-          <h3>Meet Your Instructors</h3>
-          <h4>Leeann Drees</h4>
-          <div class="left" style="width: 75%; line-height: 1.2em;">
-            <ul>
-              <li class="fragment" style="margin-bottom: 10px;">I make websites for a living!</li>
-              <li class="fragment" style="margin-bottom: 10px;">I'm mostly self-taught in HTML &amp; CSS</li> 
-              <li class="fragment" style="margin-bottom: 10px;">I work with Laura Eagin as <a href="http://ellell.co">ellell &amp; co</a></li>
-              <li class="fragment" style="margin-bottom: 10px;">I'm on the leadership team with Girl Develop It Detroit</li>             
-              <li class="fragment" style="margin-bottom: 10px;">Twitter: <a href="http://www.twitter.com/leeanndrees">@leeanndrees</a></li>
-              <li class="fragment" style="margin-bottom: 10px;">E-mail: <a href="mailto:leeann@girldevelopit.com">leeann@girldevelopit.com</a></li>
-            </ul>
-          </div>
-           <div class="right" style="width:25%">
-          	<img src="images/all3cats.jpg"/>
-          </div>
-        </section>
-        
-        <!--<section class="present" style="display: block;">
-          <h3>Meet Your Instructors</h3>
-          <h4>Nicole Rodriguez</h4>
-
-        <div class="left" style="width: 78%; font-size: 70%; line-height: 1.2em;">
-          <ul>
-
-            <li class="fragment visible" style="margin-bottom: 10px;"><span class="green">mid-1990's: </span>Graphic design student. Discovered code via AOL's WYSIWYG editor while staying up late with an insomniac toddler. That child is now a high school graduate exploring career options that involve anything but HTML.</li>
-            <li class="fragment visible" style="margin-bottom: 10px;"><span class="green">1997-1999: </span>First real graphic design job. Was asked to put together the company's first website. It was not pretty.</li>
-            <li class="fragment visible"><span class="green">1999-2002: </span>Rough times for me and code. Broke lots of websites! Much learning happened.</li>
-            <li class="fragment visible" style="margin-bottom: 10px;"><span class="green">2002-today: </span>Made amends with the code. Doing so has enabled me to work on websites & apps for Ford, GM, UnitedHealth, and Kimberly Clark. Today I'm a UX designer/developer at Xperience, and assistant organizer for Girl Develop It.</li>
-
-            <li class="fragment visible" style="margin-bottom: 10px;">Twitter: <a href="http://www.twitter.com/gopixelsgo" class="roll"><span data-title="@gopixelsgo">@gopixelsgo</span></a></li>
-            <li class="fragment" style="margin-bottom: 10px;">E-mail: <a href="mailto:gopixelsgo@gmail.com" class="roll"><span data-title="gopixelsgo@gmail.com">gopixelsgo@gmail.com</span></a></li>
-          </ul>
-
-        </div>
-        <div class="right" style="width:22%">
-            <img src="images/speak-n-math.jpg"/>
-          </div>
-
-      </section> -->
-        <section>
-          <h3>Now it's all about you!</h3>
-          <div class = "left-align">
-          <p>Let's meet each other!</p>
-          <ul>
-            <li>What's your name?</li>
-            <li>What are you hoping to learn this weekend?</li>
-            <li>What was your first concert?</li>
-          </ul>
-          </div>  
-          <img src="images/catband.jpg" width="550"><br>
-          <!--<small><a href="http://imgur.com/S4HBG">Image source</a></small>-->
-        </section>
+  <section>
+    <h3>Meet the Class!</h3>
+    <div class = "left-align">
+    <p>Let's meet each other!</p>
+    <ul>
+      <li>What's your name?</li>
+      <li>What are you hoping to learn this weekend?</li>
+      <li>What was your first concert?</li>
+    </ul>
+    </div>  
+    <img src="images/catband.jpg" width="550"><br>
+    <!--<small><a href="http://imgur.com/S4HBG">Image source</a></small>-->
+  </section>
 
         <section>
           <h3>HTML &amp; CSS: Overview</h3>
@@ -284,15 +232,13 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         </section>
 
         <section>
-          <h3>Create Your Folder</h3>
+          <h3>Download Your Folder</h3>
           <ul>
-            <li>Somewhere easy to remember (perhaps on your desktop?), save a new folder called '<span class="blue">html-site</span>' &mdash; no spaces, no caps!</li>
-            <li>Open Sublime Text &amp; create 2 new files.</li>
-            <li>Save one as <span class="green">index.html</span>.</li>
-            <li>Save the other as <span class="green">styles.css</span>.</li>
-            <li>Make sure both files are saved in your <span class="blue">html-site</span> folder!</li>
+            <li>If you haven't already, grab <a href="http://gdidetroit.com/intro/projectfiles.zip" target="_blank">projectfiles.zip</a>.</li>
+            <li><em>Recommended:</em> Save the unzipped folder somewhere easy to remember, like on your desktop</li>
+            <li>Open the html-site folder in Sublime Text.</li>
           </ul>
-          <img src="images/folder.png">
+         <!--  <img src="images/folder.png"> -->
         </section>
 
         <section>
@@ -317,13 +263,13 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
           <img src="images/hooraycat.jpg" width="300">
         </section>
 
-        <section>
+        <!-- <section>
           <h3>Make Your HTML File</h3>
           <ul>
             <li>In Sublime, create a new file.</li>
             <li>Save that file as <code>index.html</code>.</li>
           </ul>
-        </section>
+        </section> -->
 
         <section>
           <h3>Make Your HTML File</h3>
@@ -395,11 +341,10 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         </section>
         
 		<section>
-			<h3>Anatomy of an HTML element</h3>
+			<h3>Attribute/Value Pairs</h3>
 					<p><strong class="blue">Attribute</strong></p>
 					<ul>
-						<li>Provides additional information about the HTML element</li>
-						<li>Class, ID, language, style, identity, source</li>
+						<li>Provides additional information about the HTML element, such as <code>class</code>, <code>id</code>, <code>language</code>, <code>source</code>.</li>
 						<li>Placed inside an opening tag, before the right angle bracket.</li>
 					</ul>
 					<br/><br/>
@@ -418,7 +363,7 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
 		</section>
 
       <section>
-          <h3>Concrete example</h3>
+          <h3>Example: Attribute/Value Pair</h3>
           <ul>
             <li class ="fragment" >A paragraph is your content</li>
             <li class = "fragment">Putting your content into an HTML tag to make it look like a paragraph is Structure
@@ -480,8 +425,8 @@ float: left;"/><strong>Sublime Text - Mac or Windows</strong></div>
         </section>
         <!--example of head and body tags-->
         <section>
-        	<h3>Head and Body Tags: Example</h3>
-        	<img src="images/example-headbody.png" alt="example of head and body" />
+        	<h3>Example: Head and Body Tags</h3>
+        	<img src="images/screenshot-head-body.jpg" alt="example of head and body" />
         </section>
         <section>
           <h3>Head and Body Tags</h3>
@@ -854,11 +799,32 @@ Vulputate amet enim ut judging you climb the curtains rutrum, give me fish shed 
         <section>
           <h3>Check In</h3>
           <p class="left-align">Your unordered list should look something like this:</p>
+          <pre>
+            <code>
+              &lt;ul>
+                &lt;li>Home&lt;/li>
+                &lt;li>About&lt;/li>
+                &lt;li>Portfolio&lt;/li>
+                &lt;li>Girl Develop It Detroit&lt;/li>
+                &lt;li>Email Me&lt;/li>
+              &lt;/ul>
+            </code>
+          </pre>
         </section>
 
         <section>
           <h3>Check In</h3>
           <p class="left-align">Your ordered list should look something like this:</p>
+          <pre>
+            <code>
+              &lt;ol>
+                &lt;li>Got on my bike&lt;/li>
+                &lt;li>Rode down Trumbull to Grand River&lt;/li>
+                &lt;li>Rode down Grand River to Centre St&lt;/li>
+                &lt;li>Found somewhere to lock my bike!&lt;/li>
+              &lt;/ol>
+            </code>
+          </pre>
         </section>
 		
 		<!-- Links-->
@@ -923,6 +889,32 @@ Vulputate amet enim ut judging you climb the curtains rutrum, give me fish shed 
             <li>Open in a new window or tab.</li>
             <li>Link to an e-mail address.</li>
           </ul> -->
+        </section>
+
+        <section>
+          <h3>Check In: Links</h3>
+          <p>Your unordered list of links should look something like this:</p>
+          <pre>
+            <code>
+              &lt;ul>
+                &lt;li>
+                  &lt;a href="index.html">Home&lt;/a>
+                &lt;/li>
+                &lt;li>
+                  &lt;a href="about.html">About&lt;/a>
+                &lt;/li>
+                &lt;li>
+                  &lt;a href="portfolio.html">Portfolio&lt;/a>
+                &lt;/li>
+                &lt;li>
+                  &lt;a href="http://gdidetroit.com" target="_blank">Girl Develop It Detroit&lt;/a>
+                &lt;/li>
+                &lt;li>
+                  &lt;a href="mailto:leeann@girldevelopit.com">Email Me&lt;/a>
+                &lt;/li>
+              &lt;/ul>
+            </code>
+          </pre>
         </section>
 
        <!--  <section>
@@ -1040,11 +1032,42 @@ Vulputate amet enim ut judging you climb the curtains rutrum, give me fish shed 
         <!-- Develop it! -->
         <section>
         	<h3>Let's Develop It!</h3>
-        	<p>Let's add some:</p>
+        	<p>Let's add some images:</p>
           <ul>
-            <li>Images</li>
-            <li>Line breaks</li>
-            <li>And let's turn some of our images into links!</li>
+            <li>Add <code>kitten.jpg</code> before your unordered list.</li>
+            <li>Add <code>cats.jpg</code> and <code>kitten2.jpg</code> between your second and third paragraphs.
+            <li>Add <code>gdi-logo.png</code> after your ordered list.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Check In: Images</h3>
+          <p>Your image tags should look like the following:</p>
+          <pre>
+            <code>
+              &lt;img src="images/kitten.jpg">
+              &lt;img src="images/cats.jpg">
+              &lt;img src="images/kitten2.jpg">
+              &lt;img src="images/gdi-logo.png">
+            </code>
+          </pre>
+          <img src="images/our-site-images.png" width="500">
+        </section>
+
+        <section>
+          <h3>Check In: Images</h3>
+          <ul> 
+            <li>Our images look pretty big, maybe bigger than we want!</li>
+            <li>The best things to do would be: 
+              <ol>
+                <li>resize our images using an image editing program, and/or</li>
+                <li>control their display size with CSS</li>
+              </ol>
+            <li>...but there's a quick &amp; dirty HTML trick for this too:</li>
+            <pre>
+            <code>
+              &lt;img src="images/kitten.jpg" width="300">
+            </code>
           </ul>
         </section>
 
@@ -1481,21 +1504,22 @@ p {
           <h3>Let's develop it</h3>
           <ul>
             <li>Open your <code>styles.css</code> file</li>
-            <li>Give your <code>body</code> a background color</li>
-            <li>Create CSS rules for the <code>p</code> tag, the <code>h1</code> tag and the <code>a</code> tag</li>
+            <li>Give your <code>body</code> a background color (#c4da9a)</li>
+            <li>Assign a color (#8B0036) to your <code>a</code> tags</li>
+            <li>Assign a color (#ffffff) and a background color (#00A9B4) to your <code>h1</code> tag</li>
           </ul>
-<pre><code class = "css">
-p {   
-  color:grey; 
-}
-           
-h1 { 
-  color: #fff;
-  background-color: #333;
+<pre><code class = "css fragment">
+body {
+  background-color: #c4da9a;
 }
 
-a { 
-  color: orange; 
+h1 {
+  background-color: #00A9B4;
+  color: #ffffff;
+}
+
+a {
+  color: #8B0036;
 }
           </code></pre>
         </section>
@@ -1583,12 +1607,15 @@ p {
             <li>Assign a font family to your paragraph and your h1 tags</li>
           </ul>
 <pre><code class = "css">
-p {   
-  font: italic bold 10px serif;
+p {
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
 }
-           
-h1 { 
-  font-family: CenturyGothic, Impact, sans-serif; 
+
+h1 {
+  background-color: #00A9B4;
+  color: #ffffff;
+  font-family: Georgia,Times,"Times New Roman",serif;
+
 }
           </code></pre>
         </section>
@@ -1616,19 +1643,16 @@ p em {
         <section>
           <h3>Let's develop it</h3>
           <ul>
-            <li>In your HTML file, identify a child selector you'd like to apply some styling to.</li>
-            <li>In your CSS file, write a rule for that particular child.</li>
-          <hr>
-          <li class="fragment">Example:
+            <li>We can style the <code>li</code>s we have inside our <code>ol</code> differently than the ones inside our <code>ul</code>.</li>
+          </ul>
           <pre>
             <code class="css">
-              ol li {
-              color: #A11E6E;
-              font: italic 15px serif;
+            ol li {
+              font: 25px sans-serif;
             }
             </code>
           </pre>
-          </ul>
+          
         </section>
 <!-- Comments -->
 <section>
@@ -1838,21 +1862,11 @@ p {
           <p style="text-align: left; text-decoration:underline;">Look at &amp; play with some code:</p>
           <ul class="left">
           <li>Find some favorite websites, then view source &amp; inspect elements!
-          </li></ul>
-          <br/>
-          <p style="text-align: left; text-decoration:underline; margin-top:20px;">Get set up for Day 2:</p>
-          <ul>
-          <li>Create a folder for the next class, name it <span class="blue">"html-site2"</span></li>
-          <li>Create <span class="blue">"html-site2/images"</span>, and put the following in it: 
-          <ul>
-            <li>A profile picture of yourself</li>
-            <li>2 to 3 other pictures for your website</li>
-            <li><strong>Give these files simple names without spaces or caps!</strong></li>
-          </ul>
-          <li>Download these icons: <a href="http://gdidetroit.com/intro/icons.zip
- ">http://gdidetroit.com/intro/icons.zip</a>
-          <li><strong><span class="yellow">Bonus</span></strong>: Write a paragraph to introduce yourself</li>
-          </ul>
+          </li>
+          <li>Note the things you recognize!</li>
+          <li>Is anything super confusing?</li>
+          <li>Bring notes of anything you love or find really baffling and we'll talk them over tomorow :)</li>
+        </ul>
         </section>
 
        <!-- Question-->

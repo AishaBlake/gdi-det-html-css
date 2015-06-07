@@ -19,7 +19,7 @@
 
 		<!-- For syntax highlighting -->
 		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/light.css">
+		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
 
 		<!-- If use the PDF print sheet so students can print slides-->
 		
@@ -47,10 +47,8 @@
             <img src="images/folderstructure3.jpg" style="border:none; box-shadow: none; width:75%;"/>
           </div>
           <div class="left" style="width: 60%;"><ul>
-          <li>Create your <span class="green">html-site2</span> folder if you haven't already.</li>
-          <li>Inside <span class="green">html-site2</span>, create <span class="blue">index.html</span>, <span class="blue">styles.css</span>, and an <span class="green">images</span> folder.</li>
-          <li>Download the icons at <a href="http://gdidetroit.com/intro/icons.zip
- ">http://gdidetroit.com/intro/icons.zip</a></li>
+          <li>Download the Session 2 Project Files from <a href="http://gdidetroit.com/intro/" target="_blank">gdidetroit.com/intro/</a></li>
+          <li>Save the html-site2 folder somewhere memorable on your computer</li>
 </ul></div>
 			  </section>
 			  
@@ -126,12 +124,10 @@
         <section>
           <h3>Folder Structure</h3>         
           <div class="left" style="width: 45%;">
-          <p class="left-align"><strong>Do you have your folder set up yet?</strong></p><br />
+          <p class="left-align"><strong>Have you downloaded the project files yet?</strong></p><br />
           <ul>
-            <li>Name it <span class="blue">html-site2</span></li>
-            <li>Create new <span class="green">index.html</span> and <span class="green">styles.css</span> files.
-            <li>Create an images folder <small>(lowercase)</small></li>
-            <li>Drop your image files into the images folder.</li>
+            <li>Our directory is called html-site2</li>
+            <li>It holds our <code>index.htm</code> and <code>styles.css</code> files, as well as a subdirectory of images</li>
           </ul>
           </div>
           <div class="right" style="width: 45%;">
@@ -152,7 +148,7 @@
        	</section>
 
        	<section>
-          <h3>Let's Develop It: Setting up our <span class="green">index</span> file for today</h3>
+          <h3>Let's Develop It: Setting up our <code>index.html</code> file for today</h3>
          <p class="align-left">Open your new <span class="green">index.html</span> file<br/>
           Remember to start with <code>doctype</code> &amp; <code>html</code> tags.<br>
           Add the code to link to <span class="green">styles.css</span>!</p>
@@ -171,6 +167,26 @@
 
             &lt;/html>
           </code></pre>
+        </section>
+
+        <section>
+        	<h3>Let's Develop It: Setting up our <code>styles.css</code> file for today</h3>
+        	<p class="left-align">We'll begin our CSS file with a <strong>reset</strong>. </p>
+        	<p class="left-align">Resets get rid of most of the styles the browser wants to apply automatically, so we have more control over the display of our page!</p>
+        	<pre>
+        		<code>
+/* CSS Reset */
+
+html, body, div, span, a, em, img, strong, header, nav, section, aside, footer { 
+	background: transparent; 
+	border: 0; 
+	margin: 0; 
+	padding: 0; 
+}
+        		</code>
+
+        	</pre>
+        		
         </section>
         
 
@@ -358,36 +374,142 @@
         <!-- Exercise --> 
 
 	    <section>
-          <h3>Let's Develop It</h3>
+          <h3>Let's Develop It: Header + Nav</h3>
          <p class="blue">
-          Inside the <code>body</code>, give your page the following structure:</p> 
+          Inside the <code>body</code>, give your page a <code>header</code> with a <code>nav</code>.</p> 
          <br/>
-         <ul>
-         <li>A <code>header</code> with a <code>nav</code></li>
-         <li>A <code>main</code> content area</li>
-         <li>Sidebar (<code>aside</code>)</li>  
-         <li>A <code>footer</code></li>       
-     </ul>  
+         <pre>
+         	<code>
+&lt;body>
+  &lt;header>
+	&lt;nav>
+	&lt;/nav>
+  &lt;/header>
+&lt;/body>
+         	</code>
+         </pre>
+     </section>
 
-         <pre><code class = "html" style="min-height: 250px; max-height: 250px;"> 
-               &lt;body>
+     <section>
+     	<h3>Let's Develop It: Header + Nav</h3>
+     	<ul>
+     		<li>Add a page title in an <code>h1</code> to the <code>header</code>.</li>
+     		<li>Add an unordered list of page links to the <code>nav</code>:</li>
+  		<pre>
+  			<code>
+&lt;h1>Girl Develop It Detroit&lt;/h1>
+&lt;nav>
+  &lt;ul>
+	&lt;li>&lt;a href="about.html">About&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="events.html">Events&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="contact.html">Contact&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/nav>
+  			</code>
+  		</pre>
+     </section>
 
-                   &lt;header>
-                   		&lt;nav>
-                   		&lt;/nav>
-                   &lt;/header>
+     <section>
+     	<h3>Let's Develop It: Main</h3>
+        <p>Let's create a <code>main</code> content area &amp; fill it in with paragraphs of dummy text (this time from <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>), as well as some headings and images:</p>
 
-                   &lt;main>
-                   &lt;/main>
+         <pre><code class = "html"> 
+&lt;h2>About Girl Develop It Detroit&lt;/h2>
 
-                   &lt;aside>
-                   &lt;/aside>
+Skateboard wolf church-key ea viral pop-up, locavore squid. Roof party you probably haven't heard of them yr, commodo minim chambray Schlitz food truck vero health goth cliche. American Apparel locavore magna pariatur occaecat. Blue Bottle whatever Marfa, VHS est incididunt quinoa. Odd Future locavore esse, excepteur Vice mustache fugiat labore nihil street art taxidermy Banksy paleo wayfarers photo booth. YOLO Tumblr messenger bag, deserunt PBR aliquip fingerstache cillum bespoke scenester Pitchfork. Mlkshk ugh synth four dollar toast lo-fi, aute VHS.
 
-                   &lt;footer>
-                   &lt;/footer>
+Quis scenester meggings commodo. Marfa gastropub roof party cardigan. Tote bag direct trade cupidatat, YOLO ad Austin wolf fap hella banh mi normcore Odd Future Bushwick. Duis bitters Pinterest Intelligentsia, actually single-origin coffee Vice odio assumenda normcore irure typewriter. Dolor tofu cliche Banksy plaid, freegan DIY American Apparel Helvetica consectetur exercitation literally keytar organic lo-fi. 3 wolf moon tousled Odd Future seitan cillum heirloom, Thundercats laboris. Swag four dollar toast heirloom direct trade, exercitation tousled cillum Echo Park.
 
-               &lt;/body>
-          </code></pre>
+&lt;h3>Our Workshops:&lt;/h3>
+Forage quinoa street art sustainable. Thundercats heirloom mixtape, church-key Intelligentsia non quis tote bag nihil placeat. Irure selfies reprehenderit small batch, paleo esse ennui enim seitan irony vegan craft beer nulla mlkshk. Four dollar toast taxidermy beard, fingerstache food truck scenester sartorial dolore excepteur pork belly Helvetica chia nisi commodo Williamsburg. Salvia Helvetica cray, Intelligentsia biodiesel ugh vero Wes Anderson four dollar toast. Cray Bushwick sartorial ut Banksy cliche. Meggings sriracha nulla Etsy VHS farm-to-table.
+
+Helvetica flexitarian pour-over labore selvage. Pitchfork nostrud cardigan, cronut try-hard Kickstarter flexitarian pickled vero Brooklyn meggings retro. Tilde bicycle rights butcher distillery. Chia 8-bit whatever YOLO Austin laboris. Asymmetrical put a bird on it salvia before they sold out, pour-over cupidatat ethical tattooed nulla banjo cliche irure normcore. Wayfarers culpa twee trust fund, pariatur freegan meditation. Fap lumbersexual pariatur, roof party adipisicing VHS small batch placeat hoodie chambray deserunt mumblecore yr.
+
+&lt;h3>Our Social Events:&lt;/h3>
+Lomo listicle laborum, paleo drinking vinegar Echo Park selvage Odd Future lumbersexual Etsy tousled. Ad eu twee, incididunt sunt leggings Schlitz. Slow-carb hoodie Tumblr irony Wes Anderson meditation, swag blog craft beer ut culpa skateboard tilde. Chambray consequat nulla slow-carb exercitation. Tattooed lumbersexual four dollar toast, Echo Park chambray street art pour-over chia delectus hoodie XOXO excepteur. Actually cillum meggings Echo Park. Pug pariatur hella, ex nulla Godard biodiesel messenger bag placeat.
+
+&lt;h4>Our Amazing Sponsors:&lt;/h4>
+	&lt;img src="images/atomic.png">
+	&lt;img src="images/bizdom.png">
+         </code></pre>
+      </section>
+
+      <section>
+      	<h3>Let's Develop It: Main</h3>
+      	<p>Add <code>&lt;p></code> tags around each paragraph.</p>
+      	<p>Add alt attributes to both images.</p>
+      </section>
+
+      <!-- <section>
+      	<h3>Check In</h3>
+      	<p>Your html file should be shaping up like so:</p>
+      	<pre>
+      		<code>
+&lt;!doctype html>
+&lt;html>
+&lt;head>
+  &lt;title>Girl Develop It Detroit&lt;/title>
+&lt;/head>
+&lt;body>
+  &lt;header>
+  &lt;h1>Girl Develop It Detroit&lt;/h1>
+	&lt;nav>
+	  &lt;ul>
+		&lt;li>&lt;a href="about.html">About&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="events.html">Events&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="contact.html">Contact&lt;/a>&lt;/li>
+	  &lt;/ul>
+	&lt;/nav>
+  &lt;/header>
+  &lt;main>
+		&lt;p>Skateboard wolf church-key ea viral pop-up, locavore squid. Roof party you probably haven't heard of them yr, commodo minim chambray Schlitz food truck vero health goth cliche. American Apparel locavore magna pariatur occaecat. Blue Bottle whatever Marfa, VHS est incididunt quinoa. Odd Future locavore esse, excepteur Vice mustache fugiat labore nihil street art taxidermy Banksy paleo wayfarers photo booth. YOLO Tumblr messenger bag, deserunt PBR aliquip fingerstache cillum bespoke scenester Pitchfork. Mlkshk ugh synth four dollar toast lo-fi, aute VHS.&lt;/p>
+
+		&lt;p>Quis scenester meggings commodo. Marfa gastropub roof party cardigan. Tote bag direct trade cupidatat, YOLO ad Austin wolf fap hella banh mi normcore Odd Future Bushwick. Duis bitters Pinterest Intelligentsia, actually single-origin coffee Vice odio assumenda normcore irure typewriter. Dolor tofu cliche Banksy plaid, freegan DIY American Apparel Helvetica consectetur exercitation literally keytar organic lo-fi. 3 wolf moon tousled Odd Future seitan cillum heirloom, Thundercats laboris. Swag four dollar toast heirloom direct trade, exercitation tousled cillum Echo Park.&lt;/p>
+
+		&lt;p>Forage quinoa street art sustainable. Thundercats heirloom mixtape, church-key Intelligentsia non quis tote bag nihil placeat. Irure selfies reprehenderit small batch, paleo esse ennui enim seitan irony vegan craft beer nulla mlkshk. Four dollar toast taxidermy beard, fingerstache food truck scenester sartorial dolore excepteur pork belly Helvetica chia nisi commodo Williamsburg. Salvia Helvetica cray, Intelligentsia biodiesel ugh vero Wes Anderson four dollar toast. Cray Bushwick sartorial ut Banksy cliche. Meggings sriracha nulla Etsy VHS farm-to-table.&lt;/p>
+
+		&lt;p>Helvetica flexitarian pour-over labore selvage. Pitchfork nostrud cardigan, cronut try-hard Kickstarter flexitarian pickled vero Brooklyn meggings retro. Tilde bicycle rights butcher distillery. Chia 8-bit whatever YOLO Austin laboris. Asymmetrical put a bird on it salvia before they sold out, pour-over cupidatat ethical tattooed nulla banjo cliche irure normcore. Wayfarers culpa twee trust fund, pariatur freegan meditation. Fap lumbersexual pariatur, roof party adipisicing VHS small batch placeat hoodie chambray deserunt mumblecore yr.&lt;/p>
+
+		&lt;p>Lomo listicle laborum, paleo drinking vinegar Echo Park selvage Odd Future lumbersexual Etsy tousled. Ad eu twee, incididunt sunt leggings Schlitz. Slow-carb hoodie Tumblr irony Wes Anderson meditation, swag blog craft beer ut culpa skateboard tilde. Chambray consequat nulla slow-carb exercitation. Tattooed lumbersexual four dollar toast, Echo Park chambray street art pour-over chia delectus hoodie XOXO excepteur. Actually cillum meggings Echo Park. Pug pariatur hella, ex nulla Godard biodiesel messenger bag placeat.&lt;/p>
+
+  &lt;/main>
+&lt;/body>
+&lt;/html>
+      		</code>
+      	</pre>
+      </section> -->
+
+      <section>
+      	<h3>Let's Develop It: Aside</h3>
+      	<ul>
+      		<li>Underneath <code>&lt;main></code>, let's add an <code>&lt;aside></code> with an image, heading, and list of links:</li>
+      		<pre>
+      			<code>
+&lt;aside>	
+  &lt;img src="images/gdi-logo.png" alt="Girl Develop It Logo">
+  &lt;h3>Other Great Resources for Learning to Code:&lt;/h3>
+  &lt;ul>
+    &lt;li>&lt;a href="http://gdiannarbor.com">Girl Develop It Ann Arbor&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="http://skillcrush.com">Skillcrush&lt;/a> &lt;/li>
+    &lt;li>&lt;a href="http://teamtreehouse.com">Treehouse&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="http://codecademy.com">Codecademy&lt;/a> &lt;/li>
+  &lt;/ul>
+&lt;/aside>
+      			</code>
+      		</pre>
+      	</ul>
+      </section>
+
+      <section>
+      	<h3>Let's Develop It: Footer</h3>
+      	<p>Our last element for the moment! Let's put it right after <code>aside</code></p>
+      	<pre>
+      		<code>
+&lt;footer>
+	&lt;p>&copy; 2015 Leeann. Created in Girl Develop It - Detroit's HTML &amp; CSS workshop!&lt;/p>
+&lt;/footer>
+      		</code>
+      	</pre>
       </section>
 
       <!--  <section>
@@ -420,21 +542,6 @@
               &lt;/html>
             </code></pre>
         </section>-->
-        
-      <!-- Adding Content -->
-        <section>
-          <h3>Begin filling in content</h3>
-          <ul>
-          <li>Inside <code>&lt;head&gt;</code>, add your site's <code>&lt;title&gt;</code></li>
-          <li>In the <code>&lt;header&gt;</code>, give your page a title in a <code>heading</code></li>
-          <li>Add a few paragraphs &amp; headings (<code>h1</code>, <code>h2</code>, etc) to <code>&lt;main&gt;</code></li>
-          <li>Add a profile image to <code>&lt;aside&gt;</code></li>
-          <li>Add a paragraph to <code>&lt;footer&gt;</code></li>
-        </ul>
-	<pre><code class="html">
-     &lt;img src="images/profile.jpg" alt="my profile pic" width="200"/>
-            </code></pre>
-        </section>
 
        <!-- <section>
           <h3>Add a list and links</h3>
@@ -454,23 +561,6 @@
     &lt;/ul>
                     </code></pre>
                 </section>-->
-
-         <section>
-          <h3>Add a navigation list</h3>
-          <ul>
-          <li>Add a list of navigational links to <code>nav</code></li>
-        </ul>
-        	<pre><code class="html">
-  &lt;nav>
-    &lt;ul>
-       &lt;li>&lt;a href="about.html">About Me</a>&lt;/li>
-       &lt;li>&lt;a href="portfolio.html">My Work&lt;/li>
-       &lt;li>&lt;a href="contact.html">Contact&lt;/li>
-       &lt;li>&lt;a href="http://girldevelopit.com" target="_blank"/>Girl Develop It&lt;/a>&lt;/li>    
-    &lt;/ul>
-  &lt;/nav>
-                    </code></pre>
-                </section>
 
   <!-- Inline vs. block-->
         <section>
@@ -593,14 +683,26 @@
       <!-- Exercise -->
        <section>
        <h3>Let's Develop it!</h3>
-       <p>In <span class="green">styles.css</span>, let's add some padding to our elements.</p>
+       <p>Let's add some padding to our elements.</p>
            <pre><code class ="css">
-            padding: 10px;
-            </code></pre>
+main {
+	padding: 2%;
+}
 
-            <pre><code class ="css">
-              padding: 10px 20px 30px 40px;
-            </code></pre>
+aside {
+	padding: 1%;
+}
+
+footer {
+	padding: 1%;
+}
+
+nav ul li {
+	display: inline;
+	padding: 5px 15px;
+}
+	</code>
+	</pre>
        </section>
         
     <!-- Border-->
@@ -655,20 +757,17 @@
        <h3>Let's Develop it!</h3>
        <p>Let's add borders to our elements.</p>
        <pre><code class = "css">
-          main {
-            border: 1px solid #ff0000;
-          }
+main {
+	border: 5px solid #6D0839;
+}
 
+aside {
+	border-left: 5px dotted #D8C358;
+}
 
-          header {
-            border-bottom: 4px dotted #000000;
-          }
-
-
-          aside {
-            border-top: 1px solid #orange;
-            border-bottom: 4px dotted #000000;
-          }
+footer {
+	border: 10px double #25271E;
+}
         </code></pre>
        </section>
 
@@ -724,14 +823,25 @@
       <p>You should now have some rules like these:</p>
       <pre>
         <code class="css">
-          header, footer, aside {
-          margin: 10px;
-          padding: 5px;
-          }
+body {
+	margin: 0 auto;
+}
 
-          body {
-          margin: auto;
-          }
+main {
+	margin: 2%;
+}
+
+aside {
+	margin: 1%;
+}
+
+footer {
+	margin: 3% 5% 0;
+}
+
+nav ul li {
+	margin: 1%;
+}
         </code>
       </pre>
     </section>
@@ -816,12 +926,29 @@
         <section>
         	<h3>Let's Develop It: Style Your Page</h3>
         	<p>Now that we've got some structure and content, let's take some time to add colors and fonts with CSS.</p>
-		<br><br>
-        	<ul>
-        		<li><a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Common Font Stacks</a></li>
-        		<li>Find color codes at <a href="http://www.w3schools.com/html/html_colornames.asp" target="_blank">W3Schools</a>, <a href="http://www.colourlovers.com/colors" target="_blank">ColourLovers</a>, or <a href="http://hexu.al/" target="_blank">hexu.al</a></li>
-        	</ul>
-        	
+        	<pre><code>
+body {
+	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+	background-color: #FBEFF4;
+}
+
+header {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	/*border: 10px double #25271E;*/
+}
+
+aside {
+	/*border-left: 5px dotted #D8C358;*/
+}
+
+a {
+	color: #6D0839;
+}
+        	</code></pre> 	
         </section>
 
      <section>
@@ -894,16 +1021,16 @@
 
 <!-- Let's Develop It -->
   <section>
-    <h3>Let's Develop It</h3>
+    <h3>Let's Develop It!</h3>
     <ul>
-      <li>Let's add a couple paragraphs to our <code>&lt;aside></code>, then group them using a <code>&lt;div&gt;</code>.</li>
-      <li>We'll style this <code>&lt;div&gt;</code> after we learn about IDs &amp; classes!</li>
+      <li>Let's surround the Sponsors section of our content with a <code>div</code></li>
       <pre>
         <code class="html">
-          &lt;div>
-            &lt;p>Your aside paragraph!
-            &lt;/p>
-          &lt;/div>
+&lt;div>
+  &lt;h4>Our Amazing Sponsors:&lt;/h4>
+  &lt;img src="images/atomic.png" alt="Atomic Object">
+  &lt;img src="images/bizdom.png" alt="Bizdom">
+&lt;/div>
         </code>
       </pre>
   </section>
@@ -995,12 +1122,13 @@
   <section>
     <h3>Let's Develop It</h3>
     <ul>
-    <li>Remember the <code>&lt;div&gt;</code> we created? Let's give it a class of "align-right."</li>
-    <li>Now we add a rule to <span class="green">styles.css</span> to define what "align-right" will do:
+    <li>Remember the <code>&lt;div&gt;</code> we created? Let's give it a class of "green."</li>
+    <li>Now we add a rule to <span class="green">styles.css</span> to define what "green" will do:
       <pre>
         <code class="css">
-          .align-right {
-            text-align: right;
+          .green {
+            background-color: #D0E799;
+            padding: 10px;
           }
         </code>
       </pre>
@@ -1228,13 +1356,12 @@
        <section>
         <h3>Let's Develop it!</h3>
         <p>Inside of our absolute positioned <code>&lt;div&gt;</code>, let's add some fun social media icons.</p><br />
-        <a href="http://gdidetroit.com/intro/icons.zip" alt="free social media icons">http://gdidetroit.com/intro/icons.zip</a>
-        <br/><br/>
-        <p>Now, add the images inside the Social <code>&lt;div&gt;</code> you just created</p>
         <pre><code class ="html">
-        &lt;div class="social">
-           &lt;img src="images/facebook.jpg" alt="facebook"/>
-        &lt;/div>
+&lt;div class="social">
+  &lt;img src="images/icons/facebook.png" alt="Facebook">
+  &lt;img src="images/icons/twitter.png" alt="Twitter">
+  &lt;img src="images/icons/instagram.png" alt="Instagram">
+&lt;/div>
         </code></pre> 	
        </section>
 
@@ -1554,19 +1681,22 @@
   <ul>
     
     <li>
-      <span class="green">04/18</span>: Intro to Responsive Design
+      <span class="green">06/14</span>: Code &amp; Tea
     </li>
     <li>
-      <span class="green">04/19</span>: Code &amp; Tea</li>
+      <span class="green">06/20</span>: Intro to Programming Concepts</li>
       
       <li>
-      <span class="green">04/22 &amp; 04/27</span>: Intro to Object-Oriented Programming</li>
+      <span class="green">06/27 &amp; 06/28</span>: Intro to Ruby</li>
 
       <li>
-      <span class="green">04/27</span>: Day in the Life Panel: Designers <span class="red">(Ann Arbor)</span></li>
+      <span class="green">07/??</span>: Code &amp; Cocktails</li>
 
       <li>
-      <span class="green">04/29</span>: Code &amp; Cocktails</li>
+      <span class="green">07/11 &amp; 07/12</span>: Intermediate HTML &amp; CSS</li>
+
+       <li>
+      <span class="green">07/25 &amp; 07/26</span>: Intro to PHP</li>
 
 
   </ul><br/><br/>

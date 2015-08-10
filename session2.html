@@ -16,7 +16,7 @@
 
 		<link rel="stylesheet" href="reveal/css/reveal.css">
 		<link rel="stylesheet" href="reveal/css/theme/simple.css" id="theme">
-
+    <link rel="stylesheet" href="custom.css">
 		<!-- For syntax highlighting -->
 		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
 		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
@@ -127,7 +127,7 @@
           <p class="left-align"><strong>Have you downloaded the project files yet?</strong></p><br />
           <ul>
             <li>Our directory is called html-site2</li>
-            <li>It holds our <code>index.htm</code> and <code>styles.css</code> files, as well as a subdirectory of images</li>
+            <li>It holds our <code>index.html</code> and <code>styles.css</code> files, as well as a subdirectory of images</li>
           </ul>
           </div>
           <div class="right" style="width: 45%;">
@@ -148,29 +148,29 @@
        	</section>
 
        	<section>
-          <h3>Let's Develop It: Setting up our <code>index.html</code> file for today</h3>
-         <p class="align-left">Open your new <span class="green">index.html</span> file<br/>
+          <h3>Let's Develop It: Setting up our HTML file for today</h3>
+         <p class="align-left">Open your new <code>index.html</code> file<br/>
           Remember to start with <code>doctype</code> &amp; <code>html</code> tags.<br>
-          Add the code to link to <span class="green">styles.css</span>!</p>
+          Add the code to link to <code>styles.css</code>!</p>
   
                 <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
-            &lt;!DOCTYPE html>
-            &lt;html>
+        &lt;!DOCTYPE html>
+        &lt;html>
 
-               &lt;head>
-                  &lt;link rel="stylesheet" type="text/css" href="styles.css" />
-                  &lt;title>Title of the page &lt;/title>
-               &lt;/head>
+           &lt;head>
+              &lt;link rel="stylesheet" type="text/css" href="styles.css" />
+              &lt;title>Title of the page &lt;/title>
+           &lt;/head>
 
-               &lt;body>
-               &lt;/body>
+           &lt;body>
+           &lt;/body>
 
-            &lt;/html>
+        &lt;/html>
           </code></pre>
         </section>
 
         <section>
-        	<h3>Let's Develop It: Setting up our <code>styles.css</code> file for today</h3>
+        	<h3>Let's Develop It: Setting up our CSS file for today</h3>
         	<p class="left-align">We'll begin our CSS file with a <strong>reset</strong>. </p>
         	<p class="left-align">Resets get rid of most of the styles the browser wants to apply automatically, so we have more control over the display of our page!</p>
         	<pre>
@@ -375,7 +375,7 @@ html, body, div, span, a, em, img, strong, header, nav, section, aside, footer {
 
 	    <section>
           <h3>Let's Develop It: Header + Nav</h3>
-         <p class="blue">
+         <p>
           Inside the <code>body</code>, give your page a <code>header</code> with a <code>nav</code>.</p> 
          <br/>
          <pre>
@@ -429,7 +429,7 @@ Helvetica flexitarian pour-over labore selvage. Pitchfork nostrud cardigan, cron
 Lomo listicle laborum, paleo drinking vinegar Echo Park selvage Odd Future lumbersexual Etsy tousled. Ad eu twee, incididunt sunt leggings Schlitz. Slow-carb hoodie Tumblr irony Wes Anderson meditation, swag blog craft beer ut culpa skateboard tilde. Chambray consequat nulla slow-carb exercitation. Tattooed lumbersexual four dollar toast, Echo Park chambray street art pour-over chia delectus hoodie XOXO excepteur. Actually cillum meggings Echo Park. Pug pariatur hella, ex nulla Godard biodiesel messenger bag placeat.
 
 &lt;h4>Our Amazing Sponsors:&lt;/h4>
-	&lt;img src="images/atomic.png">
+	&lt;img src="images/grandcircus.jpg">
 	&lt;img src="images/bizdom.png">
          </code></pre>
       </section>
@@ -561,11 +561,25 @@ Lomo listicle laborum, paleo drinking vinegar Echo Park selvage Odd Future lumbe
     &lt;/ul>
                     </code></pre>
                 </section>-->
+  <section>
+    <h3>Let's Develop It: Comments!</h3>
+    <ul>
+      <li>Use HTML comments to keep your code clean &amp; readable.</li>
+      <li>Add comments to remind yourself at a glance where sections begin and end.</li>
+      <li>Don't like one of the images I made you use? Comment it out!</li>
+    </ul>
+    <pre>
+      <code>
+    &lt;!-- this is a comment -->
+      </code>
+    </pre>
+  </section>
+
 
   <!-- Inline vs. block-->
         <section>
           <h3>Inline vs Block</h3>
-          <div class = "left" style="width: 50%; text-align: left;">
+          <div class = "left" style="width: 50%; text-align: left; font-size: 85%;">
             <div class = "fragment">
               <p>So far, we have mostly seen <span class="green">"block"</span> elements</p>
               <p>They appear on the next line, like paragraphs</p>
@@ -907,16 +921,17 @@ nav ul li {
        </section>
 
        <section>
-        <h3>Quiz Pop</h3>
+        <h3>Pop Quiz</h3>
         <p>What color will the paragraph text be?</p>
         <pre>
         <code class="css">
-        	p {
-        	color: red;
+      	p {
+      	color: red;
         }
+
         p {
         color: blue;
-    	}
+    	  }
         </code>
     </pre>
     <small class="fragment">The paragraph text will be <span class="blue">blue</span>, because bottom rules override earlier rules.</small>
@@ -966,15 +981,19 @@ a {
               <li>Apply IDs &amp; Classes to <code>&lt;div&gt;</code>s to give the browser more information about them.</li>
             </ul>
             <ul style="width: 70%;">
-              <li><pre><code>&lt;div>
+              <li><pre><code>
+              &lt;div>
                  &lt;p>Content&lt;p>
                  &lt;p>Content&lt;p>
               &lt;/div></code></pre></li>
-              <li><pre><code>&lt;div id="social">
+              <li><pre><code>
+              &lt;div id="social">
                  &lt;h1>Main Heading&lt;h1>
+                 &lt;p>....&lt;/p>
               &lt;/div></code></pre></li>
               <li>
-              <pre><code>&lt;div class="sub-content">
+              <pre><code>
+              &lt;div class="sub-content">
                  &lt;p>Some more content&lt;p>
               &lt;/div></code></pre></li>
               </ul>
@@ -1436,7 +1455,7 @@ a {
           <pre><code class ="css">
            aside{
               float: right;
-              width: 300px;
+              width: 30%;
             }
           </code></pre>
        </section>
@@ -1445,6 +1464,17 @@ a {
        <h3>Using floats to place elements side by side</h3> 
        <p>If you want two block level elements to be side by side, you need to float both elements. One left, and one right.</p>
        <img src="images/example-float-column.png" />
+       </section>
+
+       <section>
+        <h3>Try it out!</h3>
+        <p>Float your main to the left.</p>
+        <pre><code class ="css">
+           main{
+              float: left;
+              width: 60%;
+            }
+          </code></pre>
        </section>
 
 <!-- Clear-->
@@ -1681,30 +1711,33 @@ a {
   <ul>
     
     <li>
-      <span class="green">06/14</span>: Code &amp; Tea
+      <span class="green">08/18 &amp; 08/20</span>: Intro to JavaScript
     </li>
     <li>
-      <span class="green">06/20</span>: Intro to Programming Concepts</li>
+      <span class="green">09/10</span>: Developer Panel</li>
       
       <li>
-      <span class="green">06/27 &amp; 06/28</span>: Intro to Ruby</li>
+      <span class="green">09/12</span>: Basic HTML</li>
 
       <li>
-      <span class="green">07/??</span>: Code &amp; Cocktails</li>
+      <span class="green">09/19</span>: Getting Sassy with CSS</li>
 
       <li>
-      <span class="green">07/11 &amp; 07/12</span>: Intermediate HTML &amp; CSS</li>
+      <span class="green">09/19</span>: DiscoTech</li>
 
        <li>
-      <span class="green">07/25 &amp; 07/26</span>: Intro to PHP</li>
+      <span class="green">09/20</span>: Bootstrap Resume</li>
+
+      <li>
+      <span class="green">09/26</span>: Code &amp; Coffee</li>
 
 
   </ul><br/><br/>
   <p>Make sure to like us on <a href="https://www.facebook.com/GirlDevelopItDetroit">Facebook</a>, follow us on <a href="http://twitter.com/gdidet">Twitter</a>, and watch our <a href="http://www.meetup.com/Girl-Develop-It-Detroit/">Meetup group</a> for more great events!</p>
 
-  <a href="http://www.meetup.com/Girl-Develop-It-Detroit/">
+  <!-- <a href="http://www.meetup.com/Girl-Develop-It-Detroit/">
     <img src = "images/gdi_logo_badge.png" style="width: 150px; border: none; box-shadow: none;">
-  </a>
+  </a> -->
 </section>
 
       <section>
@@ -1720,7 +1753,7 @@ a {
       
       <footer>
         <div class="copyright">
-          HTML/CSS &mdash; Girl Develop It &mdash;
+          HTML/CSS &mdash; Girl Develop It Detroit &mdash;
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>

@@ -39,9 +39,6 @@
 			  <!-- Opening slide -->
 			  <!-- WiFi Info -->
 			  <section>
-			  	<h3>WiFi Connection</h3>
-			  	<p>Network: <span class="blue"> atomic-detroit-public</span></p>
-          <p>Password: <span class="blue"> atomicpublic</span></p>
           <h3 style="margin-top:55px;">Set Up for Today:</h3>
           <div class="right" style="width: 35%;">
             <img src="images/folderstructure3.jpg" style="border:none; box-shadow: none; width:75%;"/>
@@ -137,14 +134,14 @@
 
 
        	<section>
-       		<h3>Wait...why are we calling it <span class="green">index.html?</span></h3>
+       		<h3>Wait...why are we calling it <code>index.html?</code></h3>
        		<ul style="font-size: 85%;">
-       			<li class="fragment"><span class="green">index.html</span> is the default filename a web browser looks for when pointed to any directory.</li>
+       			<li class="fragment"><code>index.html</code> is the default filename a web browser looks for when pointed to any directory.</li>
        			<li class="fragment">You won't necessarily see it reflected in the URL &mdash; we just see <span class="pink">http://girldevelopit.com</span>, but the browser is displaying <span class="pink">http://girldevelopit.com/index.html</span>. Sneaky!</li>
-       			<li class="fragment">You should have an <span class="green">index.html</span> file for every directory on your site. If not, users will see a list of all your filenames, like this:</li> 
+       			<li class="fragment">You should have an <code>index.html</code> file for every directory on your site. If not, users will see a list of all your filenames, like this:</li> 
        			<center><img class="fragment" src="images/noindex.png"></center>
        		</ul>
-       		<small class="fragment">You can name your CSS stylesheets whatever you want, but <span class="green">styles.css</span> is the standard.</small>
+       		<small class="fragment">You can name your CSS stylesheets whatever you want, but <code>styles.css</code> is the standard.</small>
        	</section>
 
        	<section>
@@ -153,7 +150,7 @@
           Remember to start with <code>doctype</code> &amp; <code>html</code> tags.<br>
           Add the code to link to <code>styles.css</code>!</p>
   
-                <pre><code class = "html" style="min-height: 300px; max-height: 475px;">
+                <pre class="fragment"><code class = "html" style="min-height: 300px; max-height: 475px;">
         &lt;!DOCTYPE html>
         &lt;html>
 
@@ -436,8 +433,11 @@ Lomo listicle laborum, paleo drinking vinegar Echo Park selvage Odd Future lumbe
 
       <section>
       	<h3>Let's Develop It: Main</h3>
-      	<p>Add <code>&lt;p></code> tags around each paragraph.</p>
-      	<p>Add alt attributes to both images.</p>
+      	<ul>
+      	<li>Add <code>&lt;p></code> tags around each paragraph.</li>
+      	<li>Add alt attributes to both images.</li>
+      	<li>Link the sponsor logos to each company's websites (bizdom.com, grandcircus.co)</li>
+      </ul>
       </section>
 
       <!-- <section>
@@ -941,7 +941,7 @@ nav ul li {
         <section>
         	<h3>Let's Develop It: Style Your Page</h3>
         	<p>Now that we've got some structure and content, let's take some time to add colors and fonts with CSS.</p>
-        	<pre><code>
+        	<pre class="fragment"><code>
 body {
 	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
 	background-color: #FBEFF4;
@@ -1013,12 +1013,12 @@ a {
         <section>
           <h3>Grouping elements with <code>&lt;div&gt;</code>, cont.</h3>
             <pre><code class ="html">
-            &lt;div class="align-right">
-            &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p>
-            &lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p> 
-            &lt;/div>
-            &lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> 
-            &lt;p>Quis nostrud exercitation ullamco.&lt;/a>
+    &lt;div class="align-right">
+      &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p>
+      &lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p> 
+    &lt;/div>
+    &lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> 
+    &lt;p>Quis nostrud exercitation ullamco.&lt;/a>
             </code></pre>
             <pre><code class = "css">
             .align-right{
@@ -1047,7 +1047,7 @@ a {
         <code class="html">
 &lt;div>
   &lt;h4>Our Amazing Sponsors:&lt;/h4>
-  &lt;img src="images/atomic.png" alt="Atomic Object">
+  &lt;img src="images/grandcircus.jpg" alt="Grand Circus">
   &lt;img src="images/bizdom.png" alt="Bizdom">
 &lt;/div>
         </code>
@@ -1152,14 +1152,21 @@ a {
         </code>
       </pre>
     </li>
-    <li>Feel free to create more classes on your own! You can even add multiple classes to an element, separated by spaces: 
+  </ul>
+  </section>
+
+<section>
+	<h3>Multiple Classes</h3>
+	<ul>
+	<li>Feel free to create more classes on your own!</li> 
+	<li>You can even add multiple classes to an element, separated by spaces: </li>
       <pre>
         <code class="html">
           &lt;p class="align-right red warning">
         </code>
       </pre>
-  </ul>
-  </section>
+     </ul>
+</section>
 
 <!-- Span -->
        <section>
@@ -1176,7 +1183,7 @@ a {
           <p>Span is used to apply a specific style inline</p>
           
                 <pre><code class ="html">
-                &lt;p>Paragraph with &lt;span class ="yellow">yellow&lt;/span> text.&lt;/p>
+        &lt;p>Paragraph with &lt;span class ="yellow">yellow&lt;/span> text.&lt;/p>
                 </code></pre>
 
                 <pre><code class ="css">
@@ -1482,7 +1489,7 @@ a {
          <h3>Clear</h3>
          <ul>
          <li>Clearing tells the element on which side (right, left, both) other elements <strong>cannot</strong> appear. </li>
-         <li>If you had an image floated left, and you did not want the paragraph to appear next to it, you would add <strong>clear: left;</strong> to the paragraph.</li>
+         <li>If you had an image floated left, and you did not want the paragraph to appear next to it, you would add <code>clear: left;</code> to the paragraph.</li>
          <li>Clearing both sides makes sure ﬂoats don’t ﬂow past the clear element.</li>
          </ul>
           <pre><code class = "css">
@@ -1689,8 +1696,18 @@ a {
 <!-- What's Next? -->
   <section>
     <h3>What's Next?</h3>
-    <p>It depends on what you want to do! But here are some possibilities:</p>
-    <br>
+    <h4>Practice, practice, practice!</h4>
+    <h6>(Use it or lose it)</h6>
+    <ul>
+    	<li><a href="https://www.codecademy.com/en/courses/html-css-prj?utm_campaign=2015_07_28_htmlcssprojects&utm_source=blog" target="_blank">HTML &amp; CSS Projects on Codecademy</a></li>
+    	<li>Reverse engineer some sites you like. (More on this at <a href="http://www.quora.com/Where-can-I-practice-my-HTML-CSS-and-JavaScript" target="_blank">Where can I practice HTML, CSS, and JavaScript?</a> on Quora)</li>
+    	<li>Teach someone else what you learned in class.</li>
+    	<li>Make a website for yourself or someone else!</li>
+    </ul>
+  </section>
+  <section>
+  	<h3>What's Next?</h3>
+  	<h4>Keep learning!</h4>
     <ul>
       <li>Check out the resources on <a href="http://gdidetroit.com/intro/" target="_blank">our Intro page</a>.</li>
       <li>Think about learning the following (yes, we offer workshops on all of these!):<br/><br/>
